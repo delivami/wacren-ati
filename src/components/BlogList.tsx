@@ -2,11 +2,13 @@
 
 import React, { useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa6';
+import Link from 'next/link';
 
 const recentPosts = [
   {
     category: 'Cybersecurity',
     title: 'Securing Research Infrastructure: Lessons from TrustBroker Africa',
+    slug: 'securing-research-infrastructure-lessons-from-trustbroker-africa',
     excerpt: 'A deep dive into how NREN security teams across the continent are building resilient defences for academic networks.',
     date: 'May 2026',
     readTime: '4 min',
@@ -14,6 +16,7 @@ const recentPosts = [
   {
     category: 'Identity',
     title: 'Expanding eduroam Reach in West and Central Africa',
+    slug: 'expanding-eduroam-reach-in-west-and-central-africa',
     excerpt: 'The long road to federated identity — how eduID.africa is changing access management for thousands of researchers.',
     date: 'April 2026',
     readTime: '6 min',
@@ -21,6 +24,7 @@ const recentPosts = [
   {
     category: 'Network Ops',
     title: 'Best Practices for BGP Routing in Campus Networks',
+    slug: 'best-practices-for-bgp-routing-in-campus-networks',
     excerpt: 'Practical guidance distilled from two years of bootcamp workshops across African university campuses.',
     date: 'March 2026',
     readTime: '8 min',
@@ -28,6 +32,7 @@ const recentPosts = [
   {
     category: 'Events',
     title: 'Highlights from the 2026 ATI Community Forum',
+    slug: 'highlights-from-the-2026-ati-community-forum',
     excerpt: 'Key takeaways, community debates and announced partnerships from the most-attended ATI forum yet.',
     date: 'February 2026',
     readTime: '3 min',
@@ -35,6 +40,7 @@ const recentPosts = [
   {
     category: 'Community',
     title: 'Spotlight: The Role of Women in Network Engineering',
+    slug: 'spotlight-the-role-of-women-in-network-engineering',
     excerpt: 'Conversations with six female engineers shaping the future of African research networking.',
     date: 'January 2026',
     readTime: '5 min',
@@ -42,6 +48,7 @@ const recentPosts = [
   {
     category: 'Research Data',
     title: 'Building Resilient Open Science Repositories with LIBSENSE',
+    slug: 'building-resilient-open-science-repositories-with-libsense',
     excerpt: 'How the LIBSENSE programme is equipping African institutions to manage, share and preserve research outputs.',
     date: 'December 2025',
     readTime: '7 min',
@@ -103,35 +110,36 @@ export default function BlogList() {
         {/* Editorial row list */}
         <div className="flex flex-col divide-y divide-zinc-100">
           {filtered.map((post, i) => (
-            <article
-              key={post.title}
-              className="group grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 md:gap-12 py-8 cursor-pointer"
-            >
-              {/* Left — text */}
-              <div className="flex flex-col gap-3">
-                <div className="flex items-center gap-3 flex-wrap">
-                  <span className={`text-[9px] font-bold uppercase tracking-[0.14em] px-2.5 py-1 rounded border ${categoryColors[post.category] ?? 'bg-primary/5 text-primary border-primary/20'}`}>
-                    {post.category}
-                  </span>
-                  <span className="text-[11px] font-mono text-zinc-400">{post.date} · {post.readTime} read</span>
+            <Link key={post.title} href={`/blog/${post.slug}`} className="no-underline">
+              <article
+                className="group grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 md:gap-12 py-8 cursor-pointer"
+              >
+                {/* Left — text */}
+                <div className="flex flex-col gap-3">
+                  <div className="flex items-center gap-3 flex-wrap">
+                    <span className={`text-[9px] font-bold uppercase tracking-[0.14em] px-2.5 py-1 rounded border ${categoryColors[post.category] ?? 'bg-primary/5 text-primary border-primary/20'}`}>
+                      {post.category}
+                    </span>
+                    <span className="text-[11px] font-mono text-zinc-400">{post.date} · {post.readTime} read</span>
+                  </div>
+
+                  <h3 className="font-serif text-[20px] md:text-[24px] leading-[1.25] text-zinc-900 tracking-tight font-normal group-hover:text-primary transition-colors duration-200">
+                    {post.title}
+                  </h3>
+
+                  <p className="text-[14px] text-zinc-500 leading-[1.75] max-w-[640px]">
+                    {post.excerpt}
+                  </p>
                 </div>
 
-                <h3 className="font-serif text-[20px] md:text-[24px] leading-[1.25] text-zinc-900 tracking-tight font-normal group-hover:text-primary transition-colors duration-200">
-                  {post.title}
-                </h3>
-
-                <p className="text-[14px] text-zinc-500 leading-[1.75] max-w-[640px]">
-                  {post.excerpt}
-                </p>
-              </div>
-
-              {/* Right — read arrow */}
-              <div className="flex items-center md:justify-end">
-                <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/20 text-primary text-[12px] font-semibold group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-200 whitespace-nowrap">
-                  Read article <FaArrowRight className="text-[10px] transition-transform group-hover:translate-x-0.5" />
-                </span>
-              </div>
-            </article>
+                {/* Right — read arrow */}
+                <div className="flex items-center md:justify-end">
+                  <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/20 text-primary text-[12px] font-semibold group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-200 whitespace-nowrap">
+                    Read article <FaArrowRight className="text-[10px] transition-transform group-hover:translate-x-0.5" />
+                  </span>
+                </div>
+              </article>
+            </Link>
           ))}
         </div>
 

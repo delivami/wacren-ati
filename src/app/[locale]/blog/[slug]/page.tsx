@@ -51,10 +51,10 @@ export default function BlogPostPage() {
     <>
       <Navigation />
       <main className="flex-1">
-        {/* Back to Blog
+        {/* Back to Blog */}
         <section className="bg-white pt-8 border-b border-gray-100">
           <div className="container-wf">
-            <Link href="/blog" className="inline-flex items-center gap-2 text-[13px] text-zinc-500 hover:text-primary transition-colors">
+            <Link href="/blog" className="inline-flex items-center gap-2 text-[13px] text-zinc-500 hover:text-primary transition-colors no-underline">
               <FaArrowLeft className="text-[12px]" />
               Back to Blog
             </Link>

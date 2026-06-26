@@ -5,6 +5,7 @@ import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { FaArrowRight, FaClock, FaUser } from 'react-icons/fa6';
 import BlogList from '@/components/BlogList';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Blog | WACREN Africa Training Initiative',
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 const featuredPost = {
   category: 'Community',
   title: 'Building the Next Generation of African NREN Engineers',
+  slug: 'building-the-next-generation-of-african-nren-engineers',
   excerpt: 'How the Africa Training Initiative is empowering networking professionals across the continent through hands-on capacity building and regional collaboration.',
   date: 'June 2026',
   readTime: '5 min read',
@@ -62,46 +64,48 @@ export default async function BlogPage() {
             </AnimateOnScroll>
 
             <AnimateOnScroll animation="fadeInUp" options={{ delay: 0.1 }}>
-              <div className="relative rounded-[20px] overflow-hidden border border-gray-100 shadow-lg bg-white group cursor-pointer transition-all hover:shadow-xl">
-                <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr]">
-                  {/* Image Placeholder */}
-                  <div className="bg-bg-soft relative overflow-hidden min-h-[300px] lg:min-h-full">
-                     <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(222,91,39,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(222,91,39,0.3) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
-                     <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-primary/20 font-serif text-[64px] font-bold opacity-30 group-hover:scale-110 transition-transform duration-700">ATI</span>
-                     </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-8 md:p-12 flex flex-col justify-center">
-                    <div className="mb-6">
-                      <span className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-[0.14em] px-3 py-1.5 rounded-full">
-                        <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                        {featuredPost.category}
-                      </span>
+              <Link href={`/blog/${featuredPost.slug}`} className="no-underline">
+                <div className="relative rounded-[20px] overflow-hidden border border-gray-100 shadow-lg bg-white group cursor-pointer transition-all hover:shadow-xl">
+                  <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr]">
+                    {/* Image Placeholder */}
+                    <div className="bg-bg-soft relative overflow-hidden min-h-[300px] lg:min-h-full">
+                       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(222,91,39,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(222,91,39,0.3) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+                       <div className="absolute inset-0 flex items-center justify-center">
+                          <span className="text-primary/20 font-serif text-[64px] font-bold opacity-30 group-hover:scale-110 transition-transform duration-700">ATI</span>
+                       </div>
                     </div>
 
-                    <h3 className="font-serif text-[28px] md:text-[40px] leading-[1.15] mb-4 tracking-tighter text-zinc-900 font-normal group-hover:text-primary transition-colors">
-                      {featuredPost.title}
-                    </h3>
-
-                    <p className="text-[15px] text-zinc-500 leading-[1.8] mb-8">
-                      {featuredPost.excerpt}
-                    </p>
-
-                    <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-100">
-                      <div className="flex items-center gap-4 text-[12px] text-zinc-500 font-medium">
-                        <span className="flex items-center gap-1.5"><FaUser className="text-primary/50" /> {featuredPost.author}</span>
-                        <span className="w-1 h-1 rounded-full bg-gray-300" />
-                        <span className="flex items-center gap-1.5"><FaClock className="text-primary/50" /> {featuredPost.readTime}</span>
+                    {/* Content */}
+                    <div className="p-8 md:p-12 flex flex-col justify-center">
+                      <div className="mb-6">
+                        <span className="inline-flex items-center gap-1.5 bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-[0.14em] px-3 py-1.5 rounded-full">
+                          <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                          {featuredPost.category}
+                        </span>
                       </div>
-                      <span className="w-10 h-10 rounded-full border border-gray-200 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all">
-                         <FaArrowRight className="text-zinc-400 group-hover:text-white text-[14px] transition-colors" />
-                      </span>
+
+                      <h3 className="font-serif text-[28px] md:text-[40px] leading-[1.15] mb-4 tracking-tighter text-zinc-900 font-normal group-hover:text-primary transition-colors">
+                        {featuredPost.title}
+                      </h3>
+
+                      <p className="text-[15px] text-zinc-500 leading-[1.8] mb-8">
+                        {featuredPost.excerpt}
+                      </p>
+
+                      <div className="flex items-center justify-between mt-auto pt-6 border-t border-gray-100">
+                        <div className="flex items-center gap-4 text-[12px] text-zinc-500 font-medium">
+                          <span className="flex items-center gap-1.5"><FaUser className="text-primary/50" /> {featuredPost.author}</span>
+                          <span className="w-1 h-1 rounded-full bg-gray-300" />
+                          <span className="flex items-center gap-1.5"><FaClock className="text-primary/50" /> {featuredPost.readTime}</span>
+                        </div>
+                        <span className="w-10 h-10 rounded-full border border-gray-200 group-hover:border-primary group-hover:bg-primary flex items-center justify-center transition-all">
+                           <FaArrowRight className="text-zinc-400 group-hover:text-white text-[14px] transition-colors" />
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </AnimateOnScroll>
           </div>
         </section>
