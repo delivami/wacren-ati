@@ -3,7 +3,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { FaArrowLeft, FaClock, FaUser } from 'react-icons/fa6';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 export const metadata: Metadata = {
   title: 'Blog Post | WACREN Africa Training Initiative',
@@ -14,7 +14,7 @@ const blogPost = {
   category: 'Community',
   date: 'June 2026',
   readTime: '5 min read',
-  author: 'WACREN Team',
+  author: 'Padmore Aning',
   content: `
     <p class="mb-6 text-[16px] text-zinc-700 leading-[1.8]">
       How the Africa Training Initiative is empowering networking professionals across the continent through hands-on capacity building and regional collaboration.

@@ -3,7 +3,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { FaArrowLeft, FaMapPin, FaCalendar, FaUser, FaTag } from 'react-icons/fa6';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 // Mock event data
 const events = [
