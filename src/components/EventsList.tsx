@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import AnimateOnScroll from './AnimateOnScroll';
 import { FaMapPin, FaChalkboardUser, FaVideo, FaWrench, FaPeopleGroup, FaFilter } from 'react-icons/fa6';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 const events = [
   { tag: 'Bootcamp', title: 'Campus Network Architecture',                        month: 'AUG', day: '12', location: 'Accra, Ghana',    track: 'Africa Digital Campus', slug: 'campus-network-architecture' },
