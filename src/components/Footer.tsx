@@ -22,11 +22,11 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-primary text-white pt-[80px] pb-[40px] border-t border-white/10">
+    <footer className="bg-primary text-white pt-[48px] pb-[24px] border-t border-white/10">
       <div className="container-wf">
-        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-[48px] lg:gap-[64px] mb-[64px]">
+        <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-[32px] lg:gap-[40px] mb-[36px]">
           <div>
-            <div className="flex items-center mb-[24px]">
+            <div className="flex items-center mb-[16px]">
               <Image 
                 src="/images/wacren-ati-logo.png" 
                 alt="WACREN ATI" 
@@ -35,7 +35,7 @@ export default function Footer() {
                 className="h-[44px] w-auto brightness-0 invert"
               />
             </div>
-            <p className="text-[14px] leading-[1.8] text-white/50 max-w-[340px] mb-[24px]">
+            <p className="text-[13px] leading-[1.7] text-white/50 max-w-[340px] mb-[16px]">
               {t('tagline')}
             </p>
             <div className="flex gap-[12px]">
@@ -54,8 +54,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">{t('atiTitle')}</h4>
-            <ul className="space-y-[12px] m-0 p-0 list-none">
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[14px] font-mono">{t('atiTitle')}</h4>
+            <ul className="space-y-[8px] m-0 p-0 list-none">
               {atiLinks.map((link, i) => (
                 <li key={i}>
                   <Link 
@@ -72,8 +72,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">{t('programmesTitle')}</h4>
-            <ul className="space-y-[12px] m-0 p-0 list-none">
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[14px] font-mono">{t('programmesTitle')}</h4>
+            <ul className="space-y-[8px] m-0 p-0 list-none">
               {programmesLinks.map((link, i) => (
                 <li key={i}>
                   <Link 
@@ -90,8 +90,8 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">{t('wacrenTitle')}</h4>
-            <ul className="space-y-[12px] m-0 p-0 list-none">
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[14px] font-mono">{t('wacrenTitle')}</h4>
+            <ul className="space-y-[8px] m-0 p-0 list-none">
               {wacrenLinks.map((link, i) => (
                 <li key={i}>
                   <Link 
@@ -109,13 +109,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-[32px] border-t border-white/10">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-[24px] mb-[32px]">
+        <div className="pt-[20px] border-t border-white/10">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-[16px] mb-[16px]">
             <div className="text-[11px] font-mono text-white/40 uppercase tracking-[0.05em]">
               {t('copyright', { year: new Date().getFullYear() })}
             </div>
             <div className="text-right">
-              <p className="max-w-[500px] text-[10px] md:text-[11px] font-mono text-white/30 leading-[1.6] md:text-right uppercase tracking-[0.02em] mb-[20px]">
+              <p className="max-w-[500px] text-[10px] md:text-[11px] font-mono text-white/30 leading-[1.6] md:text-right uppercase tracking-[0.02em] mb-[10px]">
                 {t('funded')}
               </p>
               {/* Partner Logos */}

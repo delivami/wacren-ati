@@ -16,7 +16,7 @@ export default async function FacilitatorsPage() {
       <Navigation />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative bg-primary text-white py-[100px] lg:py-[140px] overflow-hidden">
+        <section className="relative bg-primary text-white py-[60px] lg:py-[80px] overflow-hidden">
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <div className="absolute inset-0 opacity-40" style={{ 
               background: 'radial-gradient(ellipse 60% 80% at 70% 50%, rgba(230,126,34,0.15) 0%, transparent 65%), radial-gradient(ellipse 30% 40% at 20% 80%, rgba(255,255,255,0.05) 0%, transparent 60%)' 
@@ -26,7 +26,7 @@ export default async function FacilitatorsPage() {
 
           <div className="container-wf relative z-10 flex justify-center w-full">
             <div className="text-center w-full max-w-[1200px] flex flex-col items-center">
-              <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[76px] xl:text-[90px] font-serif leading-[1.1] mb-6 tracking-tighter md:whitespace-nowrap">
+              <h1 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-serif leading-[1.1] mb-4 tracking-tighter">
                 {t('heroTitle')} <span className="text-accent">{t('heroHighlight')}</span>
               </h1>
               <p className="text-[16px] md:text-[18px] text-white/80 leading-[1.6] max-w-[850px]">

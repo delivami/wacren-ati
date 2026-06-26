@@ -45,7 +45,7 @@ export default async function ContactPage() {
       
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative bg-primary text-white py-[100px] lg:py-[140px] overflow-hidden">
+        <section className="relative bg-primary text-white py-[60px] lg:py-[80px] overflow-hidden">
           {/* Brand Identity Background */}
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <div className="absolute inset-0 opacity-40" style={{ 
@@ -61,7 +61,7 @@ export default async function ContactPage() {
             <div className="text-center w-full max-w-[1200px] flex flex-col items-center">
               
               <AnimateOnScroll animation="fadeInUp">
-                <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[76px] xl:text-[90px] font-serif leading-[1.1] mb-6 tracking-tighter">
+                <h1 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-serif leading-[1.1] mb-4 tracking-tighter">
                   {t('heroTitlePrefix')} <span className="text-accent">{t('heroTitleHighlight')}</span>
                 </h1>
               </AnimateOnScroll>

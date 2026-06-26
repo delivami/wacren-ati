@@ -38,7 +38,8 @@
     "heroTitle": "About",
     "heroHighlight": "ATI",
     "heroDesc": "Building Africa's Research & Education Cybersecurity Community through technical exchange, operational training, and trusted collaboration.",
-    "sectionTitle": "About the Africa Training Initiative",
+    "sectionTitlePrefix": "About the",
+    "sectionTitleHighlight": "Africa Training Initiative",
     "p1": "The Africa Training Initiative (ATI) is a technical capacity development programme designed to build and strengthen the expertise required to operate research and education digital infrastructure across Africa.",
     "p2": "As universities and research institutions increasingly rely on digital platforms for research collaboration, digital learning, and open science, the need for skilled engineers to deploy and operate complex infrastructure continues to grow. ATI addresses this need by providing structured capacity-building programmes for IT engineers, system administrators, cybersecurity professionals, and infrastructure operators across the research and education community in Africa.",
     "p3": "ATI follows a collaborative, community model that brings together technical communities across Africa. Training participants and facilitators come from across the research and education ecosystem, including Network Operator Groups (NOGs), NREN engineering teams, campus network operators, cybersecurity practitioners, DevOps engineers and open science infrastructure specialists.",
@@ -49,7 +50,7 @@
     "title": "ATI Programme",
     "titleHighlight": "Framework",
     "desc": "A detailed description of the ATI programme, including its historical development, training tracks, and operational framework, is available in the programme concept note.",
-    "downloadBtn": "Download Framework (PDF)"
+    "downloadBtn": "ATI Programme Framework"
   },
   "FacilitatorsPage": {
     "heroTitle": "Call for",

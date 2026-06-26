@@ -38,7 +38,8 @@
     "heroTitle": "Sobre",
     "heroHighlight": "a ATI",
     "heroDesc": "Construindo a comunidade africana de cibersegurança para pesquisa e educação por meio de intercâmbio técnico, treinamento operacional e colaboração confiável.",
-    "sectionTitle": "Sobre a Iniciativa de Treinamento Africana",
+    "sectionTitlePrefix": "Sobre a",
+    "sectionTitleHighlight": "Iniciativa de Treinamento Africana",
     "p1": "A Iniciativa de Treinamento Africana (ATI) é um programa de desenvolvimento de capacidade técnica projetado para construir e fortalecer a expertise necessária para operar a infraestrutura digital de pesquisa e educação em toda a África.",
     "p2": "Como as universidades e instituições de pesquisa dependem cada vez mais de plataformas digitais para colaboração, aprendizado digital e ciência aberta, a necessidade de engenheiros qualificados continua a crescer. A ATI aborda essa necessidade fornecendo programas estruturados de capacitação para engenheiros de TI, administradores de sistemas, profissionais de cibersegurança e operadores de infraestrutura.",
     "p3": "A ATI segue um modelo colaborativo e comunitário que reúne comunidades técnicas em toda a África. Os participantes e facilitadores vêm de todo o ecossistema de pesquisa e educação, incluindo Grupos de Operadores de Rede (NOGs), equipes de engenharia de NRENs, operadores de redes de campus, profissionais de cibersegurança, engenheiros DevOps e especialistas em infraestrutura de ciência aberta.",
@@ -49,7 +50,7 @@
     "title": "Framework do Programa",
     "titleHighlight": "ATI",
     "desc": "Uma descrição detalhada do programa ATI, incluindo seu desenvolvimento histórico, trilhas de treinamento e framework operacional, está disponível na nota conceitual do programa.",
-    "downloadBtn": "Baixar Framework (PDF)"
+    "downloadBtn": "Quadro do Programa ATI"
   },
   "FacilitatorsPage": {
     "heroTitle": "Convite para",

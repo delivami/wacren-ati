@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import Framework from '@/components/Framework';
+
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 
 export const metadata: Metadata = {
@@ -12,12 +12,13 @@ export const metadata: Metadata = {
 
 export default async function AboutPage() {
   const t = await getTranslations('AboutPage');
+  const tFramework = await getTranslations('Framework');
   return (
     <>
       <Navigation />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative bg-primary text-white py-[100px] lg:py-[140px] overflow-hidden">
+        <section className="relative bg-primary text-white py-[60px] lg:py-[80px] overflow-hidden">
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <div className="absolute inset-0 opacity-40" style={{ 
               background: 'radial-gradient(ellipse 60% 80% at 70% 50%, rgba(230,126,34,0.15) 0%, transparent 65%), radial-gradient(ellipse 30% 40% at 20% 80%, rgba(255,255,255,0.05) 0%, transparent 60%)' 
@@ -27,7 +28,7 @@ export default async function AboutPage() {
 
           <div className="container-wf relative z-10 flex justify-center w-full">
             <div className="text-center w-full max-w-[1200px] flex flex-col items-center">
-              <h1 className="text-[36px] sm:text-[48px] md:text-[64px] lg:text-[76px] xl:text-[90px] font-serif leading-[1.1] mb-6 tracking-tighter md:whitespace-nowrap">
+              <h1 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-serif leading-[1.1] mb-4 tracking-tighter">
                 {t('heroTitle')} <span className="text-accent">{t('heroHighlight')}</span>
               </h1>
               <p className="text-[16px] md:text-[18px] text-white/80 leading-[1.6] max-w-[850px]">
@@ -42,7 +43,7 @@ export default async function AboutPage() {
           <div className="container-wf">
             <AnimateOnScroll animation="fadeInUp" className="w-full text-left flex flex-col">
               <h2 className="font-serif text-[32px] md:text-[42px] leading-[1.2] mb-[32px] tracking-tighter text-zinc-900 font-normal text-center">
-                {t('sectionTitle')}
+                {t('sectionTitlePrefix')} <em className="not-italic text-primary">{t('sectionTitleHighlight')}</em>
               </h2>
               
               <div className="space-y-[24px] text-[16px] md:text-[18px] leading-[1.8] text-zinc-600 mb-[48px]">
@@ -54,7 +55,7 @@ export default async function AboutPage() {
                 </p>
               </div>
 
-              <div className="flex justify-center">
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
                 <a 
                   href="https://survey.wacren.net/index.php/291743" 
                   target="_blank"
@@ -63,12 +64,19 @@ export default async function AboutPage() {
                 >
                   {t('applyBtn')} →
                 </a>
+                <a
+                  href="/documents/ATI-Programme-Framework.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-3 px-[32px] py-[16px] bg-accent text-white rounded-[6px] font-bold text-[14px] hover:bg-accent/90 transition-all shadow-lg uppercase tracking-[0.05em]"
+                >
+                  {tFramework('downloadBtn')}
+                  <span className="transition-transform group-hover:translate-y-1">↓</span>
+                </a>
               </div>
             </AnimateOnScroll>
           </div>
         </section>
-
-        <Framework />
       </main>
       <Footer />
     </>

@@ -31,26 +31,21 @@ export default function NetSecLaunch() {
           <p className="text-[16px] text-gray-500">{t('subtitle')}</p>
         </AnimateOnScroll>
 
-        <div className="relative max-w-[900px] mx-auto">
-          {/* Vertical Line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-gray-200 -translate-x-1/2 hidden md:block"></div>
+        <div className="relative">
+          {/* Horizontal Line */}
+          <div className="absolute left-0 right-0 top-[24px] h-[2px] bg-gray-200 hidden md:block"></div>
           
-          <AnimateOnScroll animation="staggerChildren" childSelector=".milestone-card" className="space-y-[48px] md:space-y-[0]">
+          <AnimateOnScroll animation="staggerChildren" childSelector=".milestone-card" className="flex flex-col md:flex-row items-center gap-[48px] md:gap-0">
             {milestones.map((m, i) => (
-              <div key={i} className={`milestone-card flex flex-col md:flex-row items-center gap-[24px] md:gap-0 ${i % 2 !== 0 ? 'md:flex-row-reverse' : ''} md:mb-[64px]`}>
-                <div className="md:w-1/2 flex justify-center md:px-[60px]">
-                   <div className={`${i % 2 !== 0 ? 'md:text-left' : 'md:text-right'} flex flex-col items-center ${i % 2 !== 0 ? 'md:items-start' : 'md:items-end'}`}>
-                      <span className="text-primary font-semibold text-[18px] mb-[8px]">{m.date}</span>
-                      <h4 className="text-[20px] font-serif font-semibold text-text-main mb-[12px]">{m.title}</h4>
-                      <p className={`text-[14px] text-gray-500 leading-[1.6] ${i % 2 !== 0 ? 'md:text-left' : 'md:text-right'} text-center font-normal`}>{m.desc}</p>
-                   </div>
-                </div>
-                
+              <div key={i} className="milestone-card flex flex-col items-center gap-[24px] md:flex-col md:w-1/3">
                 <div className="relative z-10 w-[48px] h-[48px] bg-primary text-white rounded-full flex items-center justify-center shadow-lg border-[6px] border-white ring-2 ring-primary/20 shrink-0">
                   {m.icon}
                 </div>
                 
-                <div className="md:w-1/2"></div>
+                <div className="flex flex-col items-center text-center">
+                  <h4 className="text-[20px] font-serif font-semibold text-text-main mb-[12px]">{m.title}</h4>
+                  <p className="text-[14px] text-gray-500 leading-[1.6] font-normal">{m.desc}</p>
+                </div>
               </div>
             ))}
           </AnimateOnScroll>

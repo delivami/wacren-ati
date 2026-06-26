@@ -27,7 +27,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative bg-primary text-white py-[100px] lg:py-[140px] overflow-hidden">
+    <section ref={heroRef} className="relative bg-primary text-white py-[60px] lg:py-[80px] overflow-hidden">
       {/* Brand Identity Background Overlay */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 opacity-40" style={{ 
@@ -39,7 +39,7 @@ export default function Hero() {
       <div className="container-wf relative z-10 flex justify-center w-full">
         <div ref={contentRef} className="text-center w-full max-w-[1200px] flex flex-col items-center">
           
-          <h1 className="hero-animate text-[36px] sm:text-[48px] md:text-[64px] lg:text-[76px] xl:text-[90px] font-serif leading-[1.1] mb-6 tracking-tighter md:whitespace-nowrap">
+          <h1 className="hero-animate text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-serif leading-[1.1] mb-4 tracking-tighter">
             {t('titlePrefix')} <span className="text-accent">{t('titleHighlight')}</span>
           </h1>
           

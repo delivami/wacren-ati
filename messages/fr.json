@@ -38,7 +38,8 @@
     "heroTitle": "À propos de",
     "heroHighlight": "l'ATI",
     "heroDesc": "Construire la communauté africaine de cybersécurité pour la recherche et l'éducation grâce à l'échange technique, la formation opérationnelle et la collaboration de confiance.",
-    "sectionTitle": "À propos de l'Initiative de Formation Africaine",
+    "sectionTitlePrefix": "À propos de l'",
+    "sectionTitleHighlight": "Initiative de Formation Africaine",
     "p1": "L'Initiative de Formation Africaine (ATI) est un programme de développement des capacités techniques conçu pour renforcer l'expertise nécessaire à l'exploitation de l'infrastructure numérique de recherche et d'éducation à travers l'Afrique.",
     "p2": "Alors que les universités et les institutions de recherche s'appuient de plus en plus sur les plateformes numériques pour la collaboration, l'apprentissage et la science ouverte, le besoin d'ingénieurs qualifiés ne cesse de croître. L'ATI répond à ce besoin en proposant des programmes de renforcement des capacités structurés pour les ingénieurs informatiques, les administrateurs système, les professionnels de la cybersécurité et les opérateurs d'infrastructure.",
     "p3": "L'ATI suit un modèle collaboratif et communautaire qui rassemble les communautés techniques à travers l'Afrique. Les participants et les facilitateurs viennent de l'ensemble de l'écosystème de la recherche et de l'éducation, y compris les groupes d'opérateurs de réseau (NOG), les équipes d'ingénierie des NREN, les opérateurs de réseaux de campus, les praticiens en cybersécurité, les ingénieurs DevOps et les spécialistes des infrastructures de science ouverte.",
@@ -49,7 +50,7 @@
     "title": "Cadre du Programme",
     "titleHighlight": "ATI",
     "desc": "Une description détaillée du programme ATI, y compris son développement historique, ses parcours de formation et son cadre opérationnel, est disponible dans la note conceptuelle du programme.",
-    "downloadBtn": "Télécharger le Cadre (PDF)"
+    "downloadBtn": "Cadre du Programme ATI"
   },
   "FacilitatorsPage": {
     "heroTitle": "Appel à",
