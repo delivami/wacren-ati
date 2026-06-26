@@ -1,30 +1,33 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
+import AnimateOnScroll from './AnimateOnScroll';
 
 export default function NetSecRelationship() {
-  const roadmap = [
-    { stage: 'Community and Knowledge Exchange', name: 'ATI NetSec Forum', color: 'bg-primary/60' },
-    { stage: 'Trusted Operational Collaboration', name: 'TrustBroker Africa', color: 'bg-primary' },
-    { stage: 'Cyber Defence Exercises', name: 'CyberBastion Africa League', color: 'bg-accent' },
-    { stage: 'Threat Intelligence Sharing', name: 'WACREN ISAC', color: 'bg-accent/80' },
-  ];
+  const t = useTranslations('NetSecRelationship');
+  
+  const colors = ['bg-primary/60', 'bg-primary', 'bg-accent', 'bg-accent/80'];
+  const roadmap = (t.raw('roadmap') as { stage: string; name: string }[]).map((item, i) => ({
+    ...item,
+    color: colors[i]
+  }));
 
   return (
     <section className="py-[100px] bg-white">
       <div className="container-wf">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[80px] items-center">
-          <div>
-            <h2 className="font-serif text-[32px] mb-[24px] tracking-tighter text-text-main text-center lg:text-left">Relationship to TrustBroker Africa</h2>
+          <AnimateOnScroll animation="slideInLeft">
+            <h2 className="font-serif text-[32px] md:text-[42px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[24px] text-center lg:text-left">
+              {t('titlePrefix')} <em className="not-italic text-primary">{t('titleHighlight')}</em>
+            </h2>
             <div className="space-y-[20px] text-[15px] leading-[1.8] text-gray-500">
-              <p>The <strong className="text-text-main">ATI NetSec Forum</strong> complements TrustBroker Africa but does not replace it. TrustBroker Africa provides a trusted collaboration environment for incident response teams and security organisations.</p>
-              <p>The NetSec Forum expands the ecosystem by bringing together a broader community of practitioners, researchers, and organisations interested in network security for research and education infrastructure.</p>
+              <p>{t('p1')}</p>
             </div>
-          </div>
+          </AnimateOnScroll>
           
-          <div className="relative">
-            <h3 className="font-mono text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase mb-[32px] text-center">Layered Cybersecurity Ecosystem</h3>
+          <AnimateOnScroll animation="slideInRight" className="relative">
             <div className="space-y-[12px]">
               {roadmap.map((item, i) => (
                 <div key={i} className="flex items-center gap-[12px] group">
@@ -40,7 +43,7 @@ export default function NetSecRelationship() {
                 </div>
               ))}
             </div>
-          </div>
+          </AnimateOnScroll>
         </div>
       </div>
     </section>

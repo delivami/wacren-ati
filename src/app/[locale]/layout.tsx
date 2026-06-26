@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import MuiThemeProvider from '@/components/MuiThemeProvider';
 import ScrollToTop from '@/components/ScrollToTop';
-import "./globals.css";
+import "../globals.css";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -73,11 +75,16 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
+  const messages = await getMessages();
+  
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -111,7 +118,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <script
           type="application/ld+json"
@@ -125,12 +132,14 @@ export default function RootLayout({
       <body
         className={`${outfit.variable} antialiased`}
       >
-        <AppRouterCacheProvider>
-          <MuiThemeProvider>
-            {children}
-            <ScrollToTop />
-          </MuiThemeProvider>
-        </AppRouterCacheProvider>
+        <NextIntlClientProvider messages={messages}>
+          <AppRouterCacheProvider>
+            <MuiThemeProvider>
+              {children}
+              <ScrollToTop />
+            </MuiThemeProvider>
+          </AppRouterCacheProvider>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

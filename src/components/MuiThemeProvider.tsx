@@ -7,18 +7,24 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#004A99', // Deep Sea Blue
+      main: '#DE5B27',    // WACREN Brand Orange
+      dark: '#C43B11',    // Darker orange for hover states
+      light: '#E97A4D',
+      contrastText: '#ffffff',
     },
     secondary: {
-      main: '#E67E22', // Warning Orange
+      main: '#4A1618',    // Deep Maroon
+      dark: '#3a1012',
+      light: '#6B2023',
+      contrastText: '#ffffff',
     },
     background: {
-      default: '#F9F6F3', // Soft Cloud White
+      default: '#FDF6F3', // Warm off-white
       paper: '#ffffff',
     },
     text: {
-      primary: '#323232', // Charcoal Grey
-      secondary: '#555555',
+      primary: '#2A1210',  // Near-black warm brown
+      secondary: '#5C3428',
     },
   },
   typography: {

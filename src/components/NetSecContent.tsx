@@ -1,59 +1,49 @@
 'use client';
 
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import { Network, ShieldCheck, Users, GraduationCap, Search, Building2 } from 'lucide-react';
+import AnimateOnScroll from './AnimateOnScroll';
 
 export default function NetSecContent() {
-  const scopeItems = [
-    {
-      title: 'NRENs',
-      desc: 'Network engineers and security specialists operating national research and education networks.',
-      icon: <Network className="text-primary" />
-    },
-    {
-      title: 'Universities',
-      desc: 'Campus network operators and institutional security teams protecting academic digital infrastructure.',
-      icon: <GraduationCap className="text-primary" />
-    },
-    {
-      title: 'CSIRTs',
-      desc: 'Collaboration with national teams to strengthen coordination between academic and national cyber defence.',
-      icon: <ShieldCheck className="text-primary" />
-    },
-    {
-      title: 'Researchers',
-      desc: 'Experts contributing applied research on threat detection, network measurement, and infrastructure resilience.',
-      icon: <Search className="text-primary" />
-    },
-    {
-      title: 'Students',
-      desc: 'Early-career professionals engaging with practitioners to develop practical cybersecurity skills.',
-      icon: <Users className="text-primary" />
-    },
-    {
-      title: 'Private Sector',
-      desc: 'Cybersecurity companies and threat intelligence organizations contributing technical expertise.',
-      icon: <Building2 className="text-primary" />
-    }
+  const t = useTranslations('NetSecContent');
+  
+  // Need to recreate the icon mapping since icons can't be in JSON
+  const scopeIcons = [
+    <Network key="0" className="text-primary" />,
+    <GraduationCap key="1" className="text-primary" />,
+    <ShieldCheck key="2" className="text-primary" />,
+    <Search key="3" className="text-primary" />,
+    <Users key="4" className="text-primary" />,
+    <Building2 key="5" className="text-primary" />
   ];
+
+  const scopeItems = (t.raw('scopeItems') as { title: string; desc: string }[]).map((item, i) => ({
+    ...item,
+    icon: scopeIcons[i]
+  }));
+
+  const bridgeList = t.raw('bridgeList') as string[];
 
   return (
     <section className="py-[80px] bg-white">
       <div className="container-wf">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-[64px] mb-[100px]">
+        <AnimateOnScroll animation="fadeInUp" className="grid grid-cols-1 lg:grid-cols-2 gap-[64px] mb-[100px]">
           <div>
-            <h2 className="font-serif text-[32px] mb-[24px] tracking-tighter text-text-main">Background & Purpose</h2>
+            <h2 className="font-serif text-[32px] md:text-[42px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[16px]">
+              {t('whyTitlePrefix')} <em className="not-italic text-primary">{t('whyTitleHighlight')}</em>
+            </h2>
             <div className="space-y-[20px] text-[15px] leading-[1.8] text-gray-500">
-              <p>As research and education networks across Africa expand, they are increasingly supporting critical digital infrastructure for universities, research institutions, and scientific collaboration. This growth brings significant opportunities but also exposes networks to an evolving cybersecurity threat landscape.</p>
-              <p>Addressing these challenges requires more than isolated technical teams. It requires a trusted, collaborative cybersecurity community that connects network operators, security practitioners, researchers, and institutions across the continent.</p>
-              <p>The <strong className="text-text-main font-semibold">ATI NetSec Forum</strong> serves as a community platform connecting cybersecurity practitioners and researchers working to secure Africa’s research and education infrastructure.</p>
+              <p>{t('whyP1')}</p>
+              <p>{t('whyP2')}</p>
+              <p>{t('whyP3')}</p>
             </div>
           </div>
           <div className="bg-bg-soft p-[40px] rounded-[16px] border border-gray-100 self-start">
-            <h3 className="font-serif text-[24px] mb-[20px] text-text-main">Bridging the Gap</h3>
-            <p className="text-[14px] text-gray-500 mb-[24px]">The NetSec Forum provides a broader technical ecosystem where network engineers, security teams, researchers, and industry experts can exchange knowledge and build operational capability between:</p>
+            <h3 className="font-serif text-[24px] mb-[20px] text-text-main">{t('bridgeTitle')}</h3>
+            <p className="text-[14px] text-gray-500 mb-[24px]">{t('bridgeDesc')}</p>
             <ul className="list-none p-0 m-0 space-y-[12px]">
-              {['Network operations', 'Security operations', 'Cybersecurity research', 'Operational incident response'].map((item, i) => (
+              {bridgeList.map((item, i) => (
                 <li key={i} className="flex items-center gap-[12px] text-[14px] font-medium text-primary">
                   <span className="w-1.5 h-1.5 bg-accent rounded-full"></span>
                   {item}
@@ -61,13 +51,16 @@ export default function NetSecContent() {
               ))}
             </ul>
           </div>
-        </div>
+        </AnimateOnScroll>
 
-        <div>
-          <h2 className="font-serif text-[32px] mb-[40px] tracking-tighter text-text-main text-center">Community Scope</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
+        <AnimateOnScroll animation="fadeInUp">
+          <h2 className="font-serif text-[32px] md:text-[42px] leading-[1.2] tracking-tighter text-zinc-900 font-normal text-center mb-[40px]">
+            {t('scopeTitlePrefix')} <em className="not-italic text-primary">{t('scopeTitleHighlight')}</em>
+          </h2>
+        </AnimateOnScroll>
+        <AnimateOnScroll animation="staggerChildren" childSelector=".scope-item" className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[24px]">
             {scopeItems.map((item, i) => (
-              <div key={i} className="p-[32px] bg-white border border-gray-100 rounded-[12px] hover:border-primary/20 hover:shadow-md transition-all">
+              <div key={i} className="scope-item p-[32px] bg-white border border-gray-100 rounded-[12px] hover:border-primary/20 hover:shadow-md transition-all">
                 <div className="mb-[20px] w-[40px] h-[40px] bg-gray-50 rounded-[8px] flex items-center justify-center">
                   {item.icon}
                 </div>
@@ -75,8 +68,7 @@ export default function NetSecContent() {
                 <p className="text-[13px] leading-[1.6] text-gray-500 font-normal">{item.desc}</p>
               </div>
             ))}
-          </div>
-        </div>
+          </AnimateOnScroll>
       </div>
     </section>
   );

@@ -1,12 +1,11 @@
 import React from 'react';
-import Navigation from '../../components/Navigation';
-import AnnouncementBar from '../../components/AnnouncementBar';
-import Footer from '../../components/Footer';
-import NetSecHero from '../../components/NetSecHero';
-import NetSecContent from '../../components/NetSecContent';
-import NetSecActivities from '../../components/NetSecActivities';
-import NetSecRelationship from '../../components/NetSecRelationship';
-import NetSecLaunch from '../../components/NetSecLaunch';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import NetSecHero from '@/components/NetSecHero';
+import NetSecContent from '@/components/NetSecContent';
+import NetSecActivities from '@/components/NetSecActivities';
+import NetSecRelationship from '@/components/NetSecRelationship';
+import NetSecLaunch from '@/components/NetSecLaunch';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -20,7 +19,6 @@ export const metadata: Metadata = {
 export default function NetSecPage() {
   return (
     <main className="min-h-screen bg-white font-outfit">
-      <AnnouncementBar />
       <Navigation />
       
       <NetSecHero />

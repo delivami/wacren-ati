@@ -1,13 +1,16 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
+import AnimateOnScroll from './AnimateOnScroll';
 
 export default function Framework() {
+  const t = useTranslations('Framework');
   return (
     <section id="framework" className="py-16 md:py-24 bg-bg-soft border-y border-gray-100">
       <div className="container-wf">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-10 md:gap-16">
+        <AnimateOnScroll animation="fadeInUp" className="flex flex-col lg:flex-row items-center justify-between gap-10 md:gap-16">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 text-center md:text-left">
             {/* Professional PDF Icon Representation */}
             <div className="relative group shrink-0">
@@ -21,11 +24,11 @@ export default function Framework() {
             </div>
 
             <div>
-              <h2 className="text-[32px] md:text-[38px] font-serif leading-[1.2] mb-4 tracking-tighter text-text-main font-normal italic">
-                ATI Programme <em className="not-italic text-primary">Framework</em>
+              <h2 className="text-[32px] md:text-[42px] font-serif leading-[1.2] mb-4 tracking-tighter text-text-main font-normal italic">
+                {t('title')} <em className="not-italic text-primary">{t('titleHighlight')}</em>
               </h2>
               <p className="text-[15px] md:text-base text-gray-500 max-w-[600px] leading-relaxed font-normal">
-                A detailed description of the ATI programme, including its historical development, training tracks, and operational framework, is available in the programme concept note.
+                {t('desc')}
               </p>
             </div>
           </div>
@@ -36,10 +39,10 @@ export default function Framework() {
             rel="noopener noreferrer"
             className="group px-8 py-4 bg-primary text-white rounded-[6px] font-bold text-[14px] hover:bg-primary/90 transition-all no-underline shadow-xl flex items-center gap-3 uppercase tracking-wider"
           >
-            Download Framework (PDF)
+            {t('downloadBtn')}
             <span className="transition-transform group-hover:translate-y-1">↓</span>
           </Link>
-        </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

@@ -2,32 +2,17 @@
 
 import React from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { FaLinkedin, FaXTwitter, FaMastodon } from 'react-icons/fa6';
 import { SiBluesky } from 'react-icons/si';
 import Image from 'next/image';
 
 export default function Footer() {
-  const atiLinks = [
-    { label: 'About ATI', href: '/#about' },
-    { label: 'Training Modules', href: '/#modules' },
-    { label: 'Programme Framework', href: '/#framework' },
-    { label: 'Apply to Facilitate', href: 'https://survey.wacren.net/index.php/291743' },
-  ];
+  const t = useTranslations('Footer');
 
-  const programmesLinks = [
-    { label: 'NREN Academy', href: '#' },
-    { label: 'TrustBroker Africa', href: 'http://trustbroker.africa/' },
-    { label: 'eduID.africa', href: 'http://eduid.africa/' },
-    { label: 'LIBSENSE', href: 'https://libsense.ren.africa/home' },
-    { label: 'Africa Digital Campus', href: 'https://digitalcampus.africa/' },
-  ];
-
-  const wacrenLinks = [
-    { label: 'About WACREN', href: 'https://www.wacren.net/about' },
-    { label: 'WACREN 2026 Conference', href: 'https://wacren.net/conference' },
-    { label: 'News & Updates', href: 'https://www.wacren.net/news' },
-    { label: 'Contact', href: '/contact' },
-  ];
+  const atiLinks = t.raw('atiLinks') as { label: string; href: string }[];
+  const programmesLinks = t.raw('programmesLinks') as { label: string; href: string }[];
+  const wacrenLinks = t.raw('wacrenLinks') as { label: string; href: string }[];
 
   const socials = [
     { icon: <FaLinkedin size={18} />, href: 'https://www.linkedin.com/company/west-and-central-african-research-and-education-network/' },
@@ -51,7 +36,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-[14px] leading-[1.8] text-white/50 max-w-[340px] mb-[24px]">
-              West and Central African Research and Education Network — connecting institutions and building the digital infrastructure for discovery, collaboration, and knowledge dissemination across Africa.
+              {t('tagline')}
             </p>
             <div className="flex gap-[12px]">
               {socials.map((s, i) => (
@@ -69,7 +54,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">ATI PROGRAMME</h4>
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">{t('atiTitle')}</h4>
             <ul className="space-y-[12px] m-0 p-0 list-none">
               {atiLinks.map((link, i) => (
                 <li key={i}>
@@ -87,7 +72,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">PROGRAMMES</h4>
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">{t('programmesTitle')}</h4>
             <ul className="space-y-[12px] m-0 p-0 list-none">
               {programmesLinks.map((link, i) => (
                 <li key={i}>
@@ -105,8 +90,8 @@ export default function Footer() {
           </div>
 
           <div>
-             <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">WACREN</h4>
-             <ul className="space-y-[12px] m-0 p-0 list-none">
+            <h4 className="text-[10px] font-semibold uppercase tracking-[0.12em] text-accent mb-[26px] font-mono">{t('wacrenTitle')}</h4>
+            <ul className="space-y-[12px] m-0 p-0 list-none">
               {wacrenLinks.map((link, i) => (
                 <li key={i}>
                   <Link 
@@ -123,12 +108,48 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-[32px] border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-[16px] text-center md:text-left">
-          <div className="text-[11px] font-mono text-white/40 uppercase tracking-[0.05em]">
-            Copyright © {new Date().getFullYear()} WACREN. All rights reserved.
-          </div>
-          <div className="max-w-[500px] text-[10px] md:text-[11px] font-mono text-white/30 leading-[1.6] md:text-right uppercase tracking-[0.02em]">
-            The Africa Training Initiative (ATI) Program is supported by the AfricaConnect Project, co-funded by the European Union through the Global Gateway Program.
+        {/* Bottom Bar */}
+        <div className="pt-[32px] border-t border-white/10">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-[24px] mb-[32px]">
+            <div className="text-[11px] font-mono text-white/40 uppercase tracking-[0.05em]">
+              {t('copyright', { year: new Date().getFullYear() })}
+            </div>
+            <div className="text-right">
+              <p className="max-w-[500px] text-[10px] md:text-[11px] font-mono text-white/30 leading-[1.6] md:text-right uppercase tracking-[0.02em] mb-[20px]">
+                {t('funded')}
+              </p>
+              {/* Partner Logos */}
+              <div className="flex flex-wrap items-center justify-end gap-[24px] md:gap-[32px]">
+                <Image
+                  src="/images/partners/GG_logo-WHITE-2.png"
+                  alt="GC Partner"
+                  width={80}
+                  height={32}
+                  className="h-[28px] w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300"
+                />
+                <Image
+                  src="/images/partners/eu.png"
+                  alt="European Union"
+                  width={64}
+                  height={32}
+                  className="h-[28px] w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300"
+                />
+                <Image
+                  src="/images/partners/africaconnect4.png"
+                  alt="AfricaConnect"
+                  width={110}
+                  height={32}
+                  className="h-[28px] w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300"
+                />
+                <Image
+                  src="/images/partners/WACREN-LOGO@300x-8.png"
+                  alt="WACREN"
+                  width={90}
+                  height={32}
+                  className="h-[28px] w-auto object-contain opacity-50 hover:opacity-90 transition-opacity duration-300 brightness-0 invert"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

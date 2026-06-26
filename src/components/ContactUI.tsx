@@ -1,167 +1,194 @@
 'use client';
 
-import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import Link from 'next/link';
+import { FaLinkedin, FaXTwitter, FaMastodon } from 'react-icons/fa6';
+import { SiBluesky } from 'react-icons/si';
 
 export default function ContactUI() {
-  const [showPhone, setShowPhone] = useState(false);
-  const [showEmail, setShowEmail] = useState(false);
+  const t = useTranslations('ContactPage');
 
   return (
-    <section className="px-8 lg:px-24 py-32">
-      <div className="max-w-[1400px] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-start">
-          
-          {/* Left: Contact Info */}
-          <div className="lg:col-span-5 pt-0 md:pt-10">
-            <h1 className="font-serif text-[38px] lg:text-[72px] font-normal leading-[1.1] text-text-main mb-6 md:mb-10 tracking-tighter">
-              Get in <em className="italic text-primary not-italic font-normal">touch</em>
-            </h1>
-            
-            <p className="text-gray-500 text-lg lg:text-[20px] leading-[1.6] mb-16 max-w-md font-normal">
-              We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
-            </p>
-
-            <div className="space-y-12">
-              <div>
-                <h3 className="font-serif text-[28px] font-normal text-text-main mb-4">Accra, Ghana</h3>
-                <p className="text-gray-500 text-base mb-8 font-normal leading-relaxed">
-                  West and Central African Research and Education Network (WACREN) Headquarters.
-                </p>
-                
-                <div className="space-y-6 text-[13px] font-medium uppercase tracking-wider">
-                  <div className="flex items-start gap-4">
-                    <span className="text-primary w-24 flex-shrink-0 font-bold">Address:</span>
-                    <a href="https://www.google.com/maps?sca_esv=df890eccffbfa804&aep=1&prmd=ivns&sxsrf=ANbL-n6VizXt2phx2HBO7wpgIw0HEcgfPA:1773331859691&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3jljrY5CkLlk8Dq3IvwBz-R5R-93bnJN-gfJetFY0A5M6NANLPFEQzj1dcFq3LKKBXHVoOgyWf6JqUwGOohIri1ZbKlIdZIYLCoWCcgdvvLUCGHg9yRK_YDxJ9L6Z2ZB_2aQaHCOnhTyYCnPFqsoOfSnoVwLX5ZQJDHa7zyZ3qmdVvO99Q&biw=1536&bih=742&dpr=1.25&um=1&ie=UTF-8&fb=1&gl=gh&sa=X&geocode=KZfUp8nwm98PMY5U-qS4GZJg&daddr=VCG+Office+Complex,+IPS+Rd,+Accra" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-accent transition-colors underline underline-offset-4 decoration-primary/20 hover:decoration-accent/40">
-                      VCG Office Complex, IPS Rd, Accra
-                    </a>
-                  </div>
-                  
-                  <div className="flex items-center gap-4">
-                    <span className="text-primary w-24 flex-shrink-0 font-bold">Phone:</span>
-                    {showPhone ? (
-                      <a href="tel:0302942873" className="text-primary hover:text-accent transition-colors font-semibold tracking-wide bg-primary/5 px-3 py-1 rounded-[4px] border border-primary/10">
-                        030 294 2873
-                      </a>
-                    ) : (
-                      <button 
-                        onClick={() => setShowPhone(true)}
-                        className="bg-primary/5 text-primary px-4 py-2 rounded-[4px] text-[10px] tracking-[0.1em] hover:bg-primary hover:text-white transition-all font-bold uppercase shadow-sm"
-                      >
-                        Click to view phone
-                      </button>
-                    )}
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    <span className="text-primary w-24 flex-shrink-0 font-bold">Email:</span>
-                    {showEmail ? (
-                      <a 
-                        href={`mailto:${['ati', 'wacren.net'].join('@')}`} 
-                        className="text-primary hover:text-accent transition-colors font-semibold tracking-wide bg-primary/5 px-3 py-1 rounded-[4px] border border-primary/10"
-                      >
-                        {['ati', 'wacren.net'].join('@')}
-                      </a>
-                    ) : (
-                      <button 
-                        onClick={() => setShowEmail(true)}
-                        className="bg-primary/5 text-primary px-4 py-2 rounded-[4px] text-[10px] tracking-[0.1em] hover:bg-primary hover:text-white transition-all font-bold uppercase shadow-sm"
-                      >
-                        Click to reveal email
-                      </button>
-                    )}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right: Contact Form Card */}
-          <div className="lg:col-span-7 bg-white p-6 md:p-12 lg:p-20 shadow-[0_40px_120px_-20px_rgba(0,74,153,0.1)] rounded-[12px] border-t-8 border-primary w-full">
-            {/* Maintenance Notice */}
-            <div className="mb-10 p-5 bg-primary/5 border border-primary/10 rounded-[8px] flex items-start gap-4">
-              <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
-              <div>
-                <h4 className="text-primary font-bold text-[13px] uppercase tracking-wider mb-1">System Notice</h4>
-                <p className="text-gray-600 text-[14px] leading-relaxed">
-                  Our contact form is currently undergoing scheduled optimization to improve our service. In the meantime, please feel free to reach out to us directly via the contact information provided.
-                </p>
-              </div>
-            </div>
-
-            <form className="space-y-8 h-full flex flex-col opacity-60 pointer-events-none select-none">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-3">
-                  <label htmlFor="name" className="block text-[11px] font-bold uppercase tracking-[0.1em] text-gray-500">Name</label>
-                  <input 
-                    type="text" 
-                    id="name" 
-                    placeholder="Jane Smith"
-                    className="w-full bg-bg-soft px-6 py-5 text-text-main text-base rounded-[6px] border border-gray-100 transition-all focus:bg-white focus:border-primary/30 focus:shadow-sm focus:outline-none"
-                  />
-                </div>
-
-                <div className="space-y-3">
-                  <label htmlFor="email" className="block text-[11px] font-bold uppercase tracking-[0.1em] text-gray-500">Email</label>
-                  <input 
-                    type="email" 
-                    id="email" 
-                    placeholder="jane@company.com"
-                    className="w-full bg-bg-soft px-6 py-5 text-text-main text-base rounded-[6px] border border-gray-100 transition-all focus:bg-white focus:border-primary/30 focus:shadow-sm focus:outline-none"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="space-y-3">
-                  <label htmlFor="phone" className="block text-[11px] font-bold uppercase tracking-[0.1em] text-gray-500">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    placeholder="+233 (0) ..."
-                    className="w-full bg-bg-soft px-6 py-5 text-text-main text-base rounded-[6px] border border-gray-100 transition-all focus:bg-white focus:border-primary/30 focus:shadow-sm focus:outline-none"
-                  />
-                </div>
-
-                <div className="space-y-3">
-                  <label htmlFor="company" className="block text-[11px] font-bold uppercase tracking-[0.1em] text-gray-500">Organization</label>
-                  <input 
-                    type="text" 
-                    id="company" 
-                    placeholder="Organization Name"
-                    className="w-full bg-bg-soft px-6 py-5 text-text-main text-base rounded-[6px] border border-gray-100 transition-all focus:bg-white focus:border-primary/30 focus:shadow-sm focus:outline-none"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-3">
-                <label htmlFor="message" className="block text-[11px] font-bold uppercase tracking-[0.1em] text-gray-500">Message</label>
-                <textarea 
-                  id="message" 
-                  rows={8}
-                  placeholder="Tell us about your training or implementation needs..."
-                  className="w-full min-h-[200px] bg-bg-soft px-6 py-5 text-text-main text-base rounded-[6px] border border-gray-100 transition-all focus:bg-white focus:border-primary/30 focus:shadow-sm focus:outline-none"
-                ></textarea>
-              </div>
-
-              <button 
-                type="submit"
-                disabled
-                className="w-full bg-gray-200 text-gray-400 py-6 text-[14px] font-bold uppercase tracking-[0.2em] rounded-[6px] cursor-not-allowed mt-4 flex items-center justify-center gap-3"
-              >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-                Form Submissions Paused
-              </button>
-            </form>
-          </div>
-
+    <div className="bg-white">
+      {/* Let's Connect Section */}
+      <section className="px-4 md:px-8 pb-24 md:pb-32" style={{ paddingTop: '120px' }}>
+        <div className="container-wf max-w-[1200px] mx-auto text-center" style={{ marginBottom: '64px' }}>
+          <h2 className="font-serif text-[32px] md:text-[42px] leading-[1.2] mb-[20px] tracking-tighter text-text-main font-normal">
+            {t('connectTitle')} <em className="italic text-primary not-italic font-normal">{t('heroTitleHighlight')}</em>
+          </h2>
+          <p className="text-[15px] md:text-base text-gray-500 max-w-[600px] font-normal leading-relaxed mx-auto">
+            {t('connectDesc')}
+          </p>
         </div>
-      </div>
-    </section>
+
+        <div className="container-wf max-w-[1200px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            
+            {/* Card 1: Email Us */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-12 text-center flex flex-col items-center hover:shadow-[0_20px_40px_-10px_rgba(230,126,34,0.1)] hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-[20px] font-bold text-text-main mb-6">{t('card1Title')}</h3>
+              <a href={`mailto:${t('card1Link')}`} className="text-primary font-bold text-[15px] hover:text-primary-dark transition-colors mt-auto">
+                {t('card1Link')}
+              </a>
+            </div>
+
+            {/* Card 2: Visit WACREN */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-12 text-center flex flex-col items-center hover:shadow-[0_20px_40px_-10px_rgba(230,126,34,0.1)] hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+              </div>
+              <h3 className="text-[20px] font-bold text-text-main mb-6">{t('card2Title')}</h3>
+              <a href={`https://${t('card2Link')}`} target="_blank" rel="noopener noreferrer" className="text-primary font-bold text-[15px] hover:text-primary-dark transition-colors mt-auto">
+                {t('card2Link')}
+              </a>
+            </div>
+
+            {/* Card 3: Follow Us */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-12 text-center flex flex-col items-center hover:shadow-[0_20px_40px_-10px_rgba(230,126,34,0.1)] hover:-translate-y-2 transition-all duration-300 group">
+              <div className="w-16 h-16 rounded-full bg-primary/10 text-primary flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                </svg>
+              </div>
+              <h3 className="text-[20px] font-bold text-text-main mb-6">{t('card3Title')}</h3>
+              <div className="flex items-center justify-center gap-3 mt-auto">
+                <Link
+                  href="https://www.linkedin.com/company/west-and-central-african-research-and-education-network/"
+                  target="_blank" rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-200"
+                >
+                  <FaLinkedin size={16} />
+                </Link>
+                <Link
+                  href="https://bsky.app/profile/wacren.bsky.social"
+                  target="_blank" rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-200"
+                >
+                  <SiBluesky size={16} />
+                </Link>
+                <Link
+                  href="https://mastodon.social/@wacren"
+                  target="_blank" rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-200"
+                >
+                  <FaMastodon size={16} />
+                </Link>
+                <Link
+                  href="https://twitter.com/wacren"
+                  target="_blank" rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-200"
+                >
+                  <FaXTwitter size={16} />
+                </Link>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Form Section */}
+      <section style={{ paddingTop: '100px', paddingBottom: '100px' }} className="bg-bg-soft px-4 md:px-8">
+        <div className="container-wf max-w-[800px] mx-auto bg-white rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] p-6 sm:p-8 md:p-14 lg:p-16">
+          <div className="text-center mb-10" style={{ paddingTop: '24px' }}>
+            <h2 className="text-[28px] font-bold text-text-main mb-3">{t('formTitle')}</h2>
+            <p className="text-gray-500 text-[14px]">{t('formDesc')}</p>
+          </div>
+
+          <form className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label htmlFor="firstName" className="block text-[13px] font-medium text-gray-700">{t('formFirstName')}</label>
+                <input 
+                  type="text" 
+                  id="firstName" 
+                  className="w-full bg-gray-50/50 px-5 py-4 text-text-main text-[15px] rounded-xl border border-gray-200 transition-all focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="lastName" className="block text-[13px] font-medium text-gray-700">{t('formLastName')}</label>
+                <input 
+                  type="text" 
+                  id="lastName" 
+                  className="w-full bg-gray-50/50 px-5 py-4 text-text-main text-[15px] rounded-xl border border-gray-200 transition-all focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label htmlFor="email" className="block text-[13px] font-medium text-gray-700">{t('formEmail')}</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  className="w-full bg-gray-50/50 px-5 py-4 text-text-main text-[15px] rounded-xl border border-gray-200 transition-all focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="phone" className="block text-[13px] font-medium text-gray-700">{t('formPhone')}</label>
+                <input 
+                  type="tel" 
+                  id="phone"
+                  placeholder="+1 (000) 000-0000"
+                  className="w-full bg-gray-50/50 px-5 py-4 text-text-main text-[15px] rounded-xl border border-gray-200 transition-all focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label htmlFor="org2" className="block text-[13px] font-medium text-gray-700">{t('formOrg')}</label>
+                <input 
+                  type="text" 
+                  id="org2"
+                  className="w-full bg-gray-50/50 px-5 py-4 text-text-main text-[15px] rounded-xl border border-gray-200 transition-all focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none"
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="subject" className="block text-[13px] font-medium text-gray-700">{t('formSubject')}</label>
+                <div className="relative">
+                  <select 
+                    id="subject" 
+                    className="w-full bg-gray-50/50 px-5 py-4 text-text-main text-[15px] rounded-xl border border-gray-200 transition-all focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none appearance-none"
+                  >
+                    <option value="general">{t('formSubjectOpt1')}</option>
+                    <option value="training">{t('formSubjectOpt2')}</option>
+                    <option value="partnership">{t('formSubjectOpt3')}</option>
+                  </select>
+                  <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none text-gray-400">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" /></svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-3">
+              <label htmlFor="message" className="block text-[13px] font-medium text-gray-700">{t('formMessage')}</label>
+              <textarea 
+                id="message" 
+                rows={6}
+                className="w-full bg-gray-50/50 px-5 py-4 text-text-main text-[15px] rounded-xl border border-gray-200 transition-all focus:bg-white focus:border-primary focus:ring-4 focus:ring-primary/10 focus:outline-none resize-none"
+              ></textarea>
+            </div>
+
+            <div style={{ paddingTop: '16px', paddingBottom: '32px' }}>
+              <button 
+                type="button"
+                className="bg-primary hover:bg-primary-dark text-white py-4 px-10 text-[15px] font-bold tracking-wide rounded-full shadow-[0_10px_20px_-10px_rgba(230,126,34,0.5)] hover:shadow-[0_15px_25px_-10px_rgba(230,126,34,0.6)] hover:-translate-y-0.5 transition-all duration-300"
+              >
+                {t('formButton')}
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
   );
 }

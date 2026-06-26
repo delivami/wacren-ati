@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useEffect, useRef } from 'react';
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { gsap } from 'gsap';
 import { Rocket } from 'lucide-react';
 
 export default function Hero() {
+  const t = useTranslations('Hero');
   const heroRef = useRef<HTMLElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -26,7 +27,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative bg-primary text-white py-[80px] lg:py-[100px] overflow-hidden">
+    <section ref={heroRef} className="relative bg-primary text-white py-[100px] lg:py-[140px] overflow-hidden">
       {/* Brand Identity Background Overlay */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 opacity-40" style={{ 
@@ -35,60 +36,17 @@ export default function Hero() {
         <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-black/10 to-transparent"></div>
       </div>
 
-      <div className="container-wf relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div ref={contentRef}>
-            <div className="hero-animate inline-flex items-center gap-2 px-3 py-1 bg-white/10 border border-white/20 rounded-full text-[11px] font-bold font-mono tracking-[0.08em] text-white mb-5 uppercase backdrop-blur-sm">
-              WACREN Flagship Programme
-            </div>
-            
-            <h1 className="hero-animate text-[38px] md:text-[52px] font-serif leading-[1.1] mb-5 tracking-tighter">
-              Africa Training<br />
-              <em className="italic text-accent not-italic font-normal">Initiative</em>
-            </h1>
-            
-            <p className="hero-animate text-[15px] md:text-base text-white/70 mb-8 leading-[1.7] max-w-[460px]">
-              Building the capacity required to operate research and education digital infrastructure across Africa — structured training for engineers, system administrators, and cybersecurity professionals.
-            </p>
-            
-            <div className="hero-animate flex flex-wrap gap-3">
-              <Link 
-            href="https://indico.wacren.net/event/263/" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-[32px] py-[16px] bg-accent text-white rounded-[6px] font-bold text-[14px] hover:bg-accent/90 transition-all no-underline shadow-lg uppercase tracking-[0.05em]"
-          >
-            Register for NMM Training →
-          </Link>
-            </div>
-          </div>
-
-          <div className="hero-card-animate relative">
-            <div className="bg-white/5 border border-white/14 p-7 rounded-[12px] backdrop-blur-[4px] shadow-2xl relative">
-              <div className="text-[10px] font-mono uppercase tracking-[0.1em] text-white/45 mb-4">
-                Programme at a glance
-              </div>
-              
-              <div className="grid grid-cols-2 gap-0.5">
-                {[
-                  { num: '6', label: 'Training modules' },
-                  { num: '3', label: 'Partner communities' },
-                  { num: 'Pan-', label: 'African reach' },
-                  { num: '2026', label: 'Renewed launch' },
-                ].map((stat, i) => (
-                  <div key={i} className="bg-white/5 p-4 rounded-[6px] border border-white/8">
-                    <div className="text-3xl font-serif text-white mb-1 leading-none font-normal">{stat.num}</div>
-                    <div className="text-[12px] text-white/50 font-mono font-medium">{stat.label}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="absolute -bottom-3 -right-3 md:right-0 bg-accent text-white px-4 py-2 rounded-full font-mono text-[10px] md:text-[11px] font-bold tracking-[0.04em] shadow-xl border-[3px] border-primary z-20 flex items-center gap-2 max-w-[max-content]">
-              <Rocket size={14} />
-              Launching · Banjul 2026
-            </div>
-          </div>
+      <div className="container-wf relative z-10 flex justify-center w-full">
+        <div ref={contentRef} className="text-center w-full max-w-[1200px] flex flex-col items-center">
+          
+          <h1 className="hero-animate text-[36px] sm:text-[48px] md:text-[64px] lg:text-[76px] xl:text-[90px] font-serif leading-[1.1] mb-6 tracking-tighter md:whitespace-nowrap">
+            {t('titlePrefix')} <span className="text-accent">{t('titleHighlight')}</span>
+          </h1>
+          
+          <p className="hero-animate text-[16px] md:text-[18px] text-white/80 leading-[1.6] max-w-[850px]">
+            {t('description')}
+          </p>
+          
         </div>
       </div>
     </section>

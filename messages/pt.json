@@ -1,0 +1,484 @@
+{
+  "Navigation": {
+    "about": "Sobre a ATI",
+    "facilitators": "Facilitadores",
+    "training": "Treinamento",
+    "netsec": "Fórum NetSec",
+    "events": "Eventos",
+    "blog": "Blog",
+    "contact": "Contate-Nos"
+  },
+  "Hero": {
+    "titlePrefix": "Iniciativa de Treinamento",
+    "titleHighlight": "Africana",
+    "description": "Construindo a capacidade necessária para operar a infraestrutura digital de pesquisa e educação em toda a África — treinamento estruturado para engenheiros, administradores de sistemas e profissionais de segurança cibernética."
+  },
+  "About": {
+    "title": "Sobre a ATI",
+    "p1": "A Iniciativa de Treinamento Africana (ATI) é um programa de desenvolvimento de capacidade técnica projetado para construir e fortalecer a experiência necessária para operar a infraestrutura digital de pesquisa e educação em toda a África.",
+    "p2": "Como as universidades e instituições de pesquisa dependem cada vez mais de plataformas digitais para colaboração em pesquisa, aprendizado digital e ciência aberta, a necessidade de engenheiros qualificados para implantar e operar infraestrutura complexa continua a crescer. A ATI aborda essa necessidade fornecendo programas estruturados.",
+    "readMore": "consulte Mais informação"
+  },
+  "Related": {
+    "titlePrefix": "A ATI Contribui para o Amplo",
+    "titleHighlight": "Ecossistema Digital",
+    "explore": "Explorar",
+    "nrenName": "NREN Academy",
+    "nrenDesc": "Programas de liderança e sustentabilidade para comunidades de Redes Nacionais de Pesquisa e Educação em toda a África.",
+    "trustName": "TrustBroker Africa",
+    "trustDesc": "Colaboração em segurança cibernética e desenvolvimento de CSIRT em todo o continente, construindo capacidade de resposta a incidentes.",
+    "eduidName": "eduID.africa",
+    "eduidDesc": "Infraestrutura de identidade federada para a comunidade de pesquisa e educação nas instituições africanas.",
+    "libsenseName": "LIBSENSE",
+    "libsenseDesc": "Repositórios de ciência aberta e plataformas de infraestrutura de dados de pesquisa para universidades e instituições africanas.",
+    "adcName": "Africa Digital Campus",
+    "adcDesc": "Ambientes distribuídos de aprendizado digital para o ensino superior em toda a África, permitindo aprendizado remoto e híbrido em grande escala."
+  },
+  "AboutPage": {
+    "heroTitle": "Sobre",
+    "heroHighlight": "a ATI",
+    "heroDesc": "Construindo a comunidade africana de cibersegurança para pesquisa e educação por meio de intercâmbio técnico, treinamento operacional e colaboração confiável.",
+    "sectionTitle": "Sobre a Iniciativa de Treinamento Africana",
+    "p1": "A Iniciativa de Treinamento Africana (ATI) é um programa de desenvolvimento de capacidade técnica projetado para construir e fortalecer a expertise necessária para operar a infraestrutura digital de pesquisa e educação em toda a África.",
+    "p2": "Como as universidades e instituições de pesquisa dependem cada vez mais de plataformas digitais para colaboração, aprendizado digital e ciência aberta, a necessidade de engenheiros qualificados continua a crescer. A ATI aborda essa necessidade fornecendo programas estruturados de capacitação para engenheiros de TI, administradores de sistemas, profissionais de cibersegurança e operadores de infraestrutura.",
+    "p3": "A ATI segue um modelo colaborativo e comunitário que reúne comunidades técnicas em toda a África. Os participantes e facilitadores vêm de todo o ecossistema de pesquisa e educação, incluindo Grupos de Operadores de Rede (NOGs), equipes de engenharia de NRENs, operadores de redes de campus, profissionais de cibersegurança, engenheiros DevOps e especialistas em infraestrutura de ciência aberta.",
+    "p4": "Parcerias com comunidades como",
+    "applyBtn": "Candidatar-se para ser Facilitador ATI"
+  },
+  "Framework": {
+    "title": "Framework do Programa",
+    "titleHighlight": "ATI",
+    "desc": "Uma descrição detalhada do programa ATI, incluindo seu desenvolvimento histórico, trilhas de treinamento e framework operacional, está disponível na nota conceitual do programa.",
+    "downloadBtn": "Baixar Framework (PDF)"
+  },
+  "FacilitatorsPage": {
+    "heroTitle": "Convite para",
+    "heroHighlight": "Facilitadores",
+    "heroDesc": "Construindo a comunidade africana de cibersegurança para pesquisa e educação por meio de intercâmbio técnico, treinamento operacional e colaboração confiável.",
+    "communityTitlePrefix": "Junte-se à Nossa Comunidade de",
+    "communityTitleHighlight": "Facilitadores Especialistas",
+    "communityDesc": "A WACREN está construindo uma comunidade de facilitadores especialistas que contribuirão para a entrega de programas de treinamento da ATI em toda a África.",
+    "communityRoles": [
+      "Ministrar workshops técnicos na comunidade de pesquisa e educação",
+      "Desenvolver materiais de treinamento alinhados com desafios operacionais reais",
+      "Orientar os participantes e capacitar a próxima geração de especialistas em infraestrutura",
+      "Fortalecer as comunidades técnicas regionais em toda a África"
+    ],
+    "ctaTitle": "Candidatar-se para",
+    "ctaHighlight": "Facilitador ATI",
+    "ctaDesc": "Partilhe a sua experiência, contribua para a infraestrutura de pesquisa e educação de África, e ajude a formar a próxima geração de engenheiros e operadores de rede.",
+    "ctaBtn": "Candidatar-se Agora →",
+    "expertiseTitlePrefix": "Áreas de",
+    "expertiseTitleHighlight": "Especialização",
+    "expertiseDesc": "Recebemos facilitadores com experiência em uma ou mais das seguintes áreas:",
+    "expertiseAreas": [
+      {
+        "title": "Operações de Rede",
+        "items": ["Monitoramento e telemetria de rede", "Solução de problemas de rede", "Ferramentas operacionais"]
+      },
+      {
+        "title": "Arquitetura de Rede de Campus",
+        "items": ["Redes de campus escaláveis", "Infraestrutura sem fio", "Segmentação de rede"]
+      },
+      {
+        "title": "Roteamento e Interconexão",
+        "items": ["Operações BGP", "Pontos de troca de tráfego (IXP)", "Resiliência de roteamento"]
+      },
+      {
+        "title": "Operações de Cibersegurança",
+        "items": ["Resposta a incidentes", "Inteligência de ameaças", "Operações de SOC", "Colaboração CSIRT"]
+      },
+      {
+        "title": "Infraestrutura de Confiança e Identidade",
+        "items": ["Implantação do eduroam", "Infraestrutura RADIUS", "Federação de identidades"]
+      },
+      {
+        "title": "Infraestrutura de Pesquisa",
+        "items": ["Plataformas de repositório", "Infraestrutura de dados de pesquisa", "Identificadores persistentes", "Plataformas de ciência aberta"]
+      }
+    ],
+    "whoShouldApplyTitlePrefix": "Quem Deve Se",
+    "whoShouldApplyTitleHighlight": "Candidatar",
+    "whoShouldApplyDesc": "Encorajamos inscrições de:",
+    "whoShouldApplyRoles": [
+      "Engenheiros e operadores de NREN",
+      "Engenheiros de rede universitários",
+      "Profissionais de cibersegurança",
+      "Engenheiros DevOps",
+      "Especialistas em infraestrutura de ciência aberta",
+      "Instrutores comunitários experientes"
+    ],
+    "whoShouldApplyBottom": "Os candidatos devem ter experiência operacional prática e interesse em contribuir para o desenvolvimento de capacidades em toda a comunidade de pesquisa e educação.",
+    "roleTitlePrefix": "Papel dos Facilitadores",
+    "roleTitleHighlight": "da ATI",
+    "roleDesc": "Os facilitadores da ATI contribuem para:",
+    "roleItems": [
+      "Ministrar workshops de treinamento",
+      "Desenvolver materiais de treinamento",
+      "Orientar participantes",
+      "Apoiar o crescimento das comunidades técnicas regionais"
+    ],
+    "roleBottom": "Os facilitadores podem ser convidados a contribuir em atividades de treinamento organizadas pela WACREN e organizações parceiras.",
+    "applyTitlePrefix": "Como se",
+    "applyTitleHighlight": "Candidatar",
+    "applyDesc": "Os candidatos interessados devem preencher o Formulário de Inscrição para Facilitadores da ATI.",
+    "applyFormRequest": "O formulário solicitará:",
+    "applyFormItems": [
+      "Histórico profissional",
+      "Áreas de especialização",
+      "Experiência anterior em treinamento ou facilitação",
+      "Interesse nos módulos da ATI"
+    ],
+    "applyBtn": "Candidatar-se Aqui →"
+  },
+  "Ecosystem": {
+    "titlePrefix": "Desenvolvimento de Capacidades",
+    "headingMain": "Através do Ecossistema de",
+    "headingHighlight": "Pesquisa e Educação",
+    "desc": "O desenvolvimento de capacidades da WACREN apoia todo o ecossistema de pesquisa e educação — desde a liderança das NREN até aos operadores de infraestruturas técnicas e as comunidades de pesquisa e académicas que dependem da infraestrutura digital para descobertas, colaboração e disseminação do conhecimento.",
+    "diagramTitle": "Diagrama do Ecossistema ATI",
+    "diagramDesc": "Liderança NREN → operadores técnicos → comunidades académicas e de pesquisa",
+    "bottomDesc": "A Iniciativa de Treinamento em África desenvolve a especialização operacional necessária para apoiar as camadas de infraestrutura que viabilizam os serviços digitais de pesquisa e educação em toda a África."
+  },
+  "Modules": {
+    "titlePrefix": "Currículo de Treinamento",
+    "headingMain": "Módulos de Treinamento",
+    "headingHighlight": "ATI",
+    "desc": "Os módulos de treinamento da ATI estão alinhados com as camadas operacionais da infraestrutura digital de pesquisa e educação.",
+    "columns": {
+      "module": "Módulo",
+      "focus": "Foco",
+      "supports": "Apoia"
+    },
+    "items": [
+      {
+        "name": "Monitoramento & Gestão de Redes",
+        "focus": "Arquiteturas de monitoramento, telemetria, solução de problemas",
+        "tag": "Operações de rede"
+      },
+      {
+        "name": "Arquitetura de Rede de Campus",
+        "focus": "Redes de campus escaláveis, infraestrutura sem fio",
+        "tag": "Africa Digital Campus"
+      },
+      {
+        "name": "Roteamento & Interconexão",
+        "focus": "Operações BGP, resiliência de roteamento, IXPs",
+        "tag": "Conectividade NREN"
+      },
+      {
+        "name": "Operações de Cibersegurança",
+        "focus": "Resposta a incidentes, operações SOC, inteligência de ameaças",
+        "tag": "TrustBroker Africa"
+      },
+      {
+        "name": "Infraestrutura de Confiança & Identidade",
+        "focus": "eduroam, federação, infraestrutura RADIUS",
+        "tag": "eduID.africa"
+      },
+      {
+        "name": "Operações de Infraestrutura de Pesquisa",
+        "focus": "Repositórios, plataformas de dados de pesquisa",
+        "tag": "LIBSENSE · CLIMET"
+      }
+    ]
+  },
+  "Launch": {
+    "titlePrefix": "Lançamento do Programa",
+    "headingMain": "Lançamento do",
+    "headingHighlight": "Programa ATI Renovado",
+    "p1": "O programa ATI renovado começará com o módulo <span>Monitoramento e Gestão de Redes (NMM)</span> durante a Conferência WACREN 2026 em Banjul, Gâmbia.",
+    "p2": "Este treinamento inaugural focar-se-á no monitoramento operacional da infraestrutura de rede e será ministrado em colaboração com comunidades regionais de Grupos de Operadores de Rede.",
+    "p3": "O programa também incluirá um <span>componente de desenvolvimento de facilitadores</span>, visando expandir o número de treinadores e especialistas técnicos na comunidade de redes de pesquisa e educação.",
+    "registerBtn": "Inscreva-se no Treinamento NMM →",
+    "facilitatorBtn": "Torne-se um Facilitador",
+    "eventDetailsLabel": "Detalhes do Evento — Ao vivo",
+    "eventDetails": [
+      { "label": "MÓDULO", "value": "Monitoramento & Gestão de Redes", "bold": true },
+      { "label": "EVENTO", "value": "Conferência WACREN 2026" },
+      { "label": "LOCAL", "value": "Banjul, Gâmbia" },
+      { "label": "ANO", "value": "2026" },
+      { "label": "PARCEIROS", "value": "Comunidades NOG regionais" }
+    ]
+  },
+  "Community": {
+    "titlePrefix": "Formação Comunitária",
+    "headingMain": "Um Modelo Colaborativo em Toda",
+    "headingHighlight": "África",
+    "desc": "A ATI segue um modelo colaborativo que reúne comunidades técnicas em toda a África. Os participantes e facilitadores de treinamento vêm de todo o ecossistema de pesquisa e educação.",
+    "audiences": [
+      "Grupos de Operadores de Rede (NOGs)",
+      "Equipes de engenharia NREN",
+      "Operadores de rede de campus",
+      "Profissionais de cibersegurança",
+      "Engenheiros DevOps",
+      "Especialistas em infraestrutura de ciência aberta"
+    ],
+    "partnershipsTitle": "Parcerias Comunitárias",
+    "partnershipsDesc": "As parcerias com comunidades como <b>NgNOG</b>, <b>GhNOG</b> e <b>TrustBroker Africa</b> garantem que o treinamento ATI permaneça prático e alinhado com os desafios operacionais reais.",
+    "partners": [
+      { "name": "NgNOG", "subtitle": "Grupo de Operadores de Rede da Nigéria" },
+      { "name": "GhNOG", "subtitle": "Grupo de Operadores de Rede do Gana" },
+      { "name": "TrustBroker Africa", "subtitle": "Colaboração em cibersegurança" },
+      { "name": "WACREN", "subtitle": "Anfitrião do programa" }
+    ]
+  },
+  "Footer": {
+    "tagline": "Rede de Pesquisa e Educação da África Ocidental e Central — conectando instituições e construindo a infraestrutura digital para descobertas, colaboração e disseminação do conhecimento em toda a África.",
+    "atiTitle": "PROGRAMA ATI",
+    "programmesTitle": "PROGRAMAS",
+    "wacrenTitle": "WACREN",
+    "atiLinks": [
+      { "label": "Sobre a ATI", "href": "/#about" },
+      { "label": "Módulos de Treinamento", "href": "/#modules" },
+      { "label": "Quadro do Programa", "href": "/#framework" },
+      { "label": "Candidatar-se como Facilitador", "href": "https://survey.wacren.net/index.php/291743" }
+    ],
+    "programmesLinks": [
+      { "label": "NREN Academy", "href": "#" },
+      { "label": "TrustBroker Africa", "href": "http://trustbroker.africa/" },
+      { "label": "eduID.africa", "href": "http://eduid.africa/" },
+      { "label": "LIBSENSE", "href": "https://libsense.ren.africa/home" },
+      { "label": "Africa Digital Campus", "href": "https://digitalcampus.africa/" }
+    ],
+    "wacrenLinks": [
+      { "label": "Sobre a WACREN", "href": "https://www.wacren.net/about" },
+      { "label": "Conferência WACREN 2026", "href": "https://wacren.net/conference" },
+      { "label": "Notícias e Atualizações", "href": "https://www.wacren.net/news" },
+      { "label": "Contacto", "href": "/contact" }
+    ],
+    "copyright": "Copyright \u00a9 {year} WACREN. Todos os direitos reservados.",
+    "funded": "O Programa da Iniciativa de Treinamento em África (ATI) é apoiado pelo Projeto AfricaConnect, cofinanciado pela União Europeia através do Programa Global Gateway."
+  },
+  "Facilitators": {
+    "titlePrefix": "Torne-se um Facilitador ATI",
+    "headingMain": "Junte-se à Nossa Comunidade de",
+    "headingHighlight": "Facilitadores Especialistas",
+    "desc": "A WACREN está a construir uma comunidade de facilitadores especialistas que contribuirão para a realização dos programas de treinamento ATI em toda a África.",
+    "roles": [
+      "Ministrar workshops técnicos na comunidade de pesquisa e educação",
+      "Desenvolver materiais de treinamento alinhados com desafios operacionais reais",
+      "Orientar participantes e formar a próxima geração de especialistas em infraestrutura",
+      "Fortalecer as comunidades técnicas regionais em toda a África"
+    ],
+    "cardTitle": "Candidatar-se para Facilitador ATI",
+    "cardDesc": "Partilhe a sua experiência, contribua para a infraestrutura de pesquisa e educação de África, e ajude a formar a próxima geração de engenheiros e operadores de rede.",
+    "applyBtn": "Candidatar-se Agora →"
+  },
+  "TrainingPage": {
+    "heroTitle": "Módulos de Treinamento",
+    "heroHighlight": "ATI",
+    "heroDesc": "Construir a Comunidade de Cibersegurança em Pesquisa e Educação em África através de intercâmbio técnico, treinamento operacional e colaboração de confiança.",
+    "curriculumTitle": "Currículo de",
+    "curriculumHighlight": "Treinamento",
+    "curriculumDesc": "Os módulos de treinamento da ATI alinham-se com as camadas operacionais da pilha de infraestruturas digitais de pesquisa e educação.",
+    "tableHeaders": {
+      "module": "MÓDULO",
+      "focus": "FOCO",
+      "supports": "APOIA"
+    },
+    "tableRows": [
+      {
+        "name": "Monitoramento e Gerenciamento de Rede",
+        "focus": "Arquiteturas de monitoramento, telemetria, solução de problemas",
+        "tag": "Operações de rede"
+      },
+      {
+        "name": "Arquitetura de Rede de Campus",
+        "focus": "Redes de campus escalonáveis, infraestrutura sem fio",
+        "tag": "Africa Digital Campus"
+      },
+      {
+        "name": "Roteamento e Interconexão",
+        "focus": "Operações BGP, resiliência de roteamento, IXPs",
+        "tag": "Conectividade NREN"
+      },
+      {
+        "name": "Operações de Cibersegurança",
+        "focus": "Resposta a incidentes, operações SOC, inteligência de ameaças",
+        "tag": "TrustBroker Africa"
+      },
+      {
+        "name": "Infraestrutura de Confiança e Identidade",
+        "focus": "Implantação eduroam, federação, infraestrutura RADIUS",
+        "tag": "eduID.africa"
+      },
+      {
+        "name": "Operações de Infraestrutura de Pesquisa",
+        "focus": "Repositórios, plataformas de dados de pesquisa",
+        "tag": "LIBSENSE • CLIMET"
+      }
+    ],
+    "closingDesc": "Em conjunto, esses módulos fornecem um caminho estruturado para engenheiros e operadores de infraestrutura desenvolverem a experiência necessária para dar suporte a ambientes modernos de pesquisa e educação."
+  },
+  "NetSecHero": {
+    "titlePrefix": "Fórum",
+    "titleHighlight": "NetSec",
+    "titleSuffix": "da ATI",
+    "desc": "Construir a Comunidade de Cibersegurança em Pesquisa e Educação em África através de intercâmbio técnico, treinamento operacional e colaboração de confiança."
+  },
+  "NetSecContent": {
+    "whyTitlePrefix": "Por que o Fórum",
+    "whyTitleHighlight": "NetSec",
+    "whyP1": "À medida que as redes de pesquisa e educação em África se expandem, elas apoiam cada vez mais a infraestrutura digital crítica para universidades, instituições de pesquisa e colaboração científica. Esse crescimento traz oportunidades significativas, mas também expõe as redes a um cenário de ameaças de cibersegurança em evolução.",
+    "whyP2": "Lidar com esses desafios exige mais do que equipes técnicas isoladas. Requer uma comunidade de cibersegurança confiável e colaborativa que conecte operadores de rede, profissionais de segurança, pesquisadores, estudantes e instituições em todo o continente.",
+    "whyP3": "É aqui que entra o Fórum NetSec da ATI. O Fórum NetSec atua como uma plataforma comunitária conectando profissionais de cibersegurança e pesquisadores que trabalham para proteger a infraestrutura de pesquisa e educação de África.",
+    "bridgeTitle": "Preenchendo a Lacuna",
+    "bridgeDesc": "A ATI complementa a NREN Academy, que se concentra em liderança, estratégia e sustentabilidade para as Redes Nacionais de Pesquisa e Educação.",
+    "bridgeList": [
+      "Operações de rede",
+      "Operações de segurança",
+      "Pesquisa em cibersegurança",
+      "Resposta operacional a incidentes"
+    ],
+    "scopeTitlePrefix": "Escopo da",
+    "scopeTitleHighlight": "Comunidade",
+    "scopeItems": [
+      {
+        "title": "NREN Academy",
+        "desc": "Engenheiros de rede e especialistas em segurança operando as redes nacionais de pesquisa e educação."
+      },
+      {
+        "title": "Universidades",
+        "desc": "Operadores de redes de campus e equipes de segurança institucionais protegendo a infraestrutura digital acadêmica."
+      },
+      {
+        "title": "CSIRTs",
+        "desc": "Colaboração com equipes nacionais para fortalecer a coordenação entre a defesa cibernética acadêmica e nacional."
+      },
+      {
+        "title": "Pesquisadores",
+        "desc": "Especialistas contribuindo com pesquisa aplicada sobre detecção de ameaças, medição de rede e resiliência de infraestrutura."
+      },
+      {
+        "title": "Estudantes",
+        "desc": "Jovens profissionais em início de carreira interagindo com especialistas para desenvolver habilidades práticas de cibersegurança."
+      },
+      {
+        "title": "Setor Privado",
+        "desc": "Empresas de cibersegurança e organizações de inteligência de ameaças contribuindo com conhecimento técnico."
+      }
+    ]
+  },
+  "NetSecActivities": {
+    "sectionSubtitle": "Principais Atividades do Fórum",
+    "titlePrefix": "Principais",
+    "titleHighlight": "Atividades",
+    "activities": [
+      {
+        "title": "Treinamento e Capacitação",
+        "desc": "Os participantes desenvolvem habilidades práticas em monitoramento de segurança de rede, detecção de intrusão, fluxos de trabalho de resposta a incidentes e fundamentos de inteligência de ameaças."
+      },
+      {
+        "title": "Intercâmbio Técnico",
+        "desc": "Uma plataforma para apresentações técnicas, estudos de caso operacionais e intercâmbio de conhecimento liderado por profissionais para resolver desafios regionais de segurança."
+      },
+      {
+        "title": "Exercícios de Cibersegurança",
+        "desc": "Participar de exercícios de defesa cibernética, como a CyberBastion Africa League, praticando respostas a incidentes realistas que afetam a infraestrutura de P&E."
+      },
+      {
+        "title": "Colaboração em Pesquisa",
+        "desc": "Avançar a pesquisa aplicada em cibersegurança relevante para as redes africanas por meio da colaboração entre pesquisadores e equipes operacionais."
+      }
+    ]
+  },
+  "NetSecRelationship": {
+    "titlePrefix": "ATI no Programa de Cibersegurança",
+    "titleHighlight": "da WACREN",
+    "p1": "O Fórum NetSec da ATI complementa outras iniciativas dentro do Programa de Cibersegurança e Confiança da WACREN. Enquanto o TrustBroker Africa oferece um ambiente de colaboração confiável para equipes de resposta a incidentes e organizações de segurança, o Fórum NetSec expande o ecossistema reunindo uma comunidade mais ampla de profissionais, pesquisadores e organizações interessados em segurança de rede para infraestrutura de pesquisa e educação.",
+    "subtitle": "Ecossistema de Cibersegurança em Camadas",
+    "roadmap": [
+      {
+        "stage": "Comunidade e Intercâmbio de Conhecimento",
+        "name": "Fórum NetSec da ATI"
+      },
+      {
+        "stage": "Colaboração Operacional de Confiança",
+        "name": "TrustBroker Africa"
+      },
+      {
+        "stage": "Exercícios de Defesa Cibernética",
+        "name": "CyberBastion Africa League"
+      },
+      {
+        "stage": "Compartilhamento de Inteligência de Ameaças",
+        "name": "WACREN ISAC"
+      }
+    ]
+  },
+  "NetSecLaunch": {
+    "titlePrefix": "Atividades de Lançamento e",
+    "titleHighlight": "Marcos",
+    "subtitle": "O Fórum NetSec da ATI será lançado juntamente com a CyberBastion Africa League em 2026.",
+    "milestones": [
+      {
+        "date": "14 de Abril de 2026",
+        "title": "Sessão de Informação CyberBastion",
+        "desc": "Lançamento oficial da iniciativa comunitária NetSec ao lado da Liga Africana."
+      },
+      {
+        "date": "Abril–Maio de 2026",
+        "title": "Competição CyberBastion",
+        "desc": "Fase de competição online envolvendo equipes de redes de pesquisa e educação em toda a África."
+      },
+      {
+        "date": "15–22 de Maio de 2026",
+        "title": "TrustBroker Africa VI",
+        "desc": "Colaboração comunitária, workshops da ATI NetSec e finais da CyberBastion Africa League."
+      }
+    ],
+    "strategicTitle": "Importância Estratégica",
+    "strategicDesc": "Através desta iniciativa, a WACREN fortalece a capacidade da África de proteger a infraestrutura digital, expande a comunidade de profissionais e cria uma rede de profissionais qualificados em cibersegurança.",
+    "strategicPoints": [
+      "Ampliação do alcance da comunidade",
+      "Desenvolvimento de capacidades CSIRT",
+      "Colaboração operacional e de pesquisa",
+      "Formação de especialistas qualificados"
+    ]
+  },
+  "EventsPage": {
+    "heroTitlePrefix": "Evento da",
+    "heroTitleHighlight": "ATI",
+    "heroTitleSuffix": "",
+    "heroDesc": "Workshops, bootcamps, webinars e fóruns anuais que reúnem a comunidade NREN africana.",
+    "comingSoon": "Conteúdo da página em breve."
+  },
+  "BlogPage": {
+    "heroTitlePrefix": "Blog da",
+    "heroTitleHighlight": "ATI",
+    "heroTitleSuffix": "",
+    "heroDesc": "Histórias, percepções e atualizações de instrutores, ex-alunos e parceiros em toda a comunidade WACREN ATI.",
+    "comingSoon": "Conteúdo da página em breve."
+  },
+  "ContactPage": {
+    "heroTitlePrefix": "Entre em",
+    "heroTitleHighlight": "Contato",
+    "heroTitleSuffix": "",
+    "heroDesc": "Tem perguntas sobre o WACREN ATI? Estamos aqui para ajudar. Entre em contato conosco e responderemos o mais breve possível.",
+    "connectTitle": "Vamos nos Conectar",
+    "connectDesc": "Seja para apoiar um workshop de Embaixador, juntar-se à nossa Comunidade de Prática, fazer parceria com o WACREN ATI ou simplesmente aprender mais sobre nossos programas, adoraríamos ouvir de você.",
+    "card1Title": "Envie-nos um Email",
+    "card1Desc": "Para consultas gerais e linhas de suporte contínuo.",
+    "card1Link": "ati@wacren.net",
+    "card2Title": "Visite o WACREN",
+    "card2Desc": "Saiba mais sobre o WACREN - a organização implementadora.",
+    "card2Link": "wacren.net",
+    "card3Title": "Siga-nos",
+    "card3Desc": "Mantenha-se atualizado em nossas redes sociais.",
+    "formTitle": "Envie-nos uma Mensagem",
+    "formDesc": "Preencha o formulário abaixo e nossa equipe entrará em contato em breve.",
+    "formFirstName": "Nome*",
+    "formLastName": "Sobrenome*",
+    "formEmail": "Endereço de Email*",
+    "formPhone": "Número de Telefone",
+    "formOrg": "Instituição / Organização",
+    "formCountry": "País*",
+    "formSubject": "Assunto*",
+    "formSubjectOpt1": "Consulta Geral",
+    "formSubjectOpt2": "Programas de Treinamento",
+    "formSubjectOpt3": "Parceria",
+    "formMessage": "Mensagem*",
+    "formButton": "Enviar Mensagem"
+  }
+}
