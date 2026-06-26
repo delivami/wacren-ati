@@ -12,6 +12,7 @@ const recentPosts = [
     excerpt: 'A deep dive into how NREN security teams across the continent are building resilient defences for academic networks.',
     date: 'May 2026',
     readTime: '4 min',
+    author: 'Padmore Aning',
   },
   {
     category: 'Identity',
@@ -20,6 +21,7 @@ const recentPosts = [
     excerpt: 'The long road to federated identity — how eduID.africa is changing access management for thousands of researchers.',
     date: 'April 2026',
     readTime: '6 min',
+    author: 'WACREN Team',
   },
   {
     category: 'Network Ops',
@@ -28,6 +30,7 @@ const recentPosts = [
     excerpt: 'Practical guidance distilled from two years of bootcamp workshops across African university campuses.',
     date: 'March 2026',
     readTime: '8 min',
+    author: 'WACREN Team',
   },
   {
     category: 'Events',
@@ -36,6 +39,7 @@ const recentPosts = [
     excerpt: 'Key takeaways, community debates and announced partnerships from the most-attended ATI forum yet.',
     date: 'February 2026',
     readTime: '3 min',
+    author: 'WACREN Team',
   },
   {
     category: 'Community',
@@ -44,6 +48,7 @@ const recentPosts = [
     excerpt: 'Conversations with six female engineers shaping the future of African research networking.',
     date: 'January 2026',
     readTime: '5 min',
+    author: 'WACREN Team',
   },
   {
     category: 'Research Data',
@@ -52,6 +57,7 @@ const recentPosts = [
     excerpt: 'How the LIBSENSE programme is equipping African institutions to manage, share and preserve research outputs.',
     date: 'December 2025',
     readTime: '7 min',
+    author: 'WACREN Team',
   },
 ];
 
@@ -112,12 +118,12 @@ export default function BlogList() {
           {filtered.map((post, i) => (
             <Link key={post.title} href={`/blog/${post.slug}`} className="no-underline">
               <article
-                className="group grid grid-cols-1 md:grid-cols-[1fr_auto] gap-4 md:gap-12 py-8 cursor-pointer"
+                className="group grid grid-cols-1 md:grid-cols-[1fr_200px] gap-6 md:gap-10 py-8 cursor-pointer"
               >
                 {/* Left — text */}
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3 order-2 md:order-1">
                   <div className="flex items-center gap-3 flex-wrap">
-                    <span className={`text-[9px] font-bold uppercase tracking-[0.14em] px-2.5 py-1 rounded border ${categoryColors[post.category] ?? 'bg-primary/5 text-primary border-primary/20'}`}>
+                    <span className={`text-[9px] font-bold uppercase tracking-[0.14em] px-2.5 py-1 rounded border ${categoryColors[post.category] ?? 'bg-primary/5 text-primary border-primary/15'}`}>
                       {post.category}
                     </span>
                     <span className="text-[11px] font-mono text-zinc-400">{post.date} · {post.readTime} read</span>
@@ -132,11 +138,14 @@ export default function BlogList() {
                   </p>
                 </div>
 
-                {/* Right — read arrow */}
-                <div className="flex items-center md:justify-end">
-                  <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-primary/20 text-primary text-[12px] font-semibold group-hover:bg-primary group-hover:text-white group-hover:border-primary transition-all duration-200 whitespace-nowrap">
-                    Read article <FaArrowRight className="text-[10px] transition-transform group-hover:translate-x-0.5" />
-                  </span>
+                {/* Right — featured image */}
+                <div className="flex items-center md:justify-end order-1 md:order-2">
+                  <div className="relative bg-bg-soft rounded-[12px] overflow-hidden w-full h-[120px] md:h-[140px] group-hover:scale-[1.02] transition-transform duration-300">
+                    <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'linear-gradient(rgba(222,91,39,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(222,91,39,0.4) 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="text-primary/40 font-serif text-[32px] font-bold opacity-30 group-hover:scale-110 transition-transform duration-700">ATI</span>
+                    </div>
+                  </div>
                 </div>
               </article>
             </Link>

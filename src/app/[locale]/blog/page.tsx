@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import { FaArrowRight, FaClock, FaUser } from 'react-icons/fa6';
 import BlogList from '@/components/BlogList';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 
 export const metadata: Metadata = {
   title: 'Blog | WACREN Africa Training Initiative',
@@ -19,7 +19,7 @@ const featuredPost = {
   excerpt: 'How the Africa Training Initiative is empowering networking professionals across the continent through hands-on capacity building and regional collaboration.',
   date: 'June 2026',
   readTime: '5 min read',
-  author: 'WACREN Team'
+  author: 'Padmore Aning'
 };
 
 export default async function BlogPage() {
