@@ -133,7 +133,7 @@ export default function BlogList() {
                     {post.title}
                   </h3>
 
-                  <p className="text-[14px] md:text-[15px] text-zinc-500 leading-[1.75] max-w-[544px]">
+                  <p className="text-[15px] md:text-[16px] text-zinc-500 leading-[1.75] max-w-[544px]">
                     {post.excerpt}
                   </p>
                 </div>

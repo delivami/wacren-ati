@@ -65,7 +65,7 @@ export default function RelatedProgrammes() {
                 <h3 className="text-[16px] font-bold mb-[8px] text-text-main">
                   {t(`${p.id}Name`)}
                 </h3>
-                <p className="text-[14px] md:text-[15px] leading-[1.6] text-gray-500">
+                <p className="text-[15px] md:text-[16px] leading-[1.6] text-gray-500">
                   {t(`${p.id}Desc`)}
                 </p>
               </div>

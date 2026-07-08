@@ -15,7 +15,7 @@ export default function About() {
             {t('title')}
           </h2>
           
-          <div className="space-y-[20px] text-[14px] md:text-[15px] leading-[1.8] text-zinc-600 mb-[34px] text-left">
+          <div className="space-y-[20px] text-[15px] md:text-[16px] leading-[1.8] text-zinc-600 mb-[34px] text-left">
             <p>{t('p1')}</p>
             <p>{t('p2')}</p>
           </div>

@@ -27,7 +27,7 @@ export default function Framework() {
               <h2 className="text-[27px] md:text-[36px] font-serif leading-[1.2] mb-4 tracking-tighter text-text-main font-normal italic">
                 {t('title')} <em className="not-italic text-primary">{t('titleHighlight')}</em>
               </h2>
-              <p className="text-[14px] md:text-[15px] text-gray-500 max-w-[510px] leading-[1.8] font-normal">
+              <p className="text-[15px] md:text-[16px] text-gray-500 max-w-[510px] leading-[1.8] font-normal">
                 {t('desc')}
               </p>
             </div>

@@ -121,7 +121,7 @@ export default function Navigation() {
                 href={link.href}
                 target={link.href.startsWith('http') ? '_blank' : undefined}
                 rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                className={`px-[12px] py-[6px] text-[14px] font-medium transition-all rounded-[4px] no-underline whitespace-nowrap ${
+                className={`px-[12px] py-[6px] text-[15px] font-medium transition-all rounded-[4px] no-underline whitespace-nowrap ${
                   isActive(link.href)
                     ? 'text-primary bg-primary/8 font-semibold'
                     : 'text-zinc-600 hover:text-primary hover:bg-primary/5'

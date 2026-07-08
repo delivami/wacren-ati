@@ -84,7 +84,7 @@ export default function EventsList() {
                       {ev.tag}
                     </span>
                   </div>
-                  <h3 className="text-[13px] md:text-[14px] font-medium text-zinc-800 group-hover:text-primary leading-snug transition-colors">
+                  <h3 className="text-[13px] md:text-[15px] font-medium text-zinc-800 group-hover:text-primary leading-snug transition-colors">
                     {ev.title}
                   </h3>
                   <p className="text-[9px] text-primary/50 mt-0.5 font-mono uppercase tracking-wider">{ev.track}</p>

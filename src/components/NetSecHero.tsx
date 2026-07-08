@@ -30,7 +30,7 @@ export default function NetSecHero() {
           </AnimateOnScroll>
           
           <AnimateOnScroll animation="fadeInUp" options={{ delay: 0.2 }}>
-            <p className="text-[14px] md:text-[15px] text-white/80 leading-[1.6] max-w-[723px]">
+            <p className="text-[15px] md:text-[16px] text-white/80 leading-[1.6] max-w-[723px]">
               {t('desc')}
             </p>
           </AnimateOnScroll>

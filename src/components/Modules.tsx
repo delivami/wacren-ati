@@ -19,7 +19,7 @@ export default function Modules() {
         <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[17px] tracking-tighter text-text-main font-normal">
           {t('headingMain')} <em className="italic text-primary not-italic font-normal">{t('headingHighlight')}</em>
         </h2>
-        <p className="text-[14px] md:text-[15px] text-gray-500 max-w-[510px] mb-[34px] leading-[1.8] whitespace-pre-wrap text-left">
+        <p className="text-[15px] md:text-[16px] text-gray-500 max-w-[510px] mb-[34px] leading-[1.8] whitespace-pre-wrap text-left">
           {t('desc')}
         </p>
 
@@ -33,7 +33,7 @@ export default function Modules() {
                   {m.tag}
                 </span>
               </div>
-              <p className="text-[14px] md:text-[15px] text-gray-500 leading-relaxed font-normal">
+              <p className="text-[15px] md:text-[16px] text-gray-500 leading-relaxed font-normal">
                 {m.focus}
               </p>
             </div>
@@ -53,10 +53,10 @@ export default function Modules() {
             <tbody>
               {modules.map((m) => (
                 <tr key={m.id} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
-                  <td className="px-[17px] py-[14px] text-[12px] font-semibold text-text-main">{m.name}</td>
-                  <td className="px-[17px] py-[14px] text-[14px] md:text-[15px] text-gray-500 font-normal">{m.focus}</td>
+                  <td className="px-[17px] py-[14px] text-[15px] md:text-[16px] font-semibold text-text-main">{m.name}</td>
+                  <td className="px-[17px] py-[14px] text-[15px] md:text-[16px] text-gray-500 font-normal">{m.focus}</td>
                   <td className="px-[17px] py-[14px]">
-                    <span className="text-[10px] font-mono text-primary font-medium">{m.tag}</span>
+                    <span className="text-[15px] md:text-[16px] font-mono text-primary font-medium">{m.tag}</span>
                   </td>
                 </tr>
               ))}
@@ -64,7 +64,7 @@ export default function Modules() {
           </table>
         </div>
 
-        <p className="text-[12px] md:text-[13px] leading-[1.8] text-gray-400 max-w-[544px] mt-[27px] italic font-normal">
+        <p className="text-[15px] md:text-[16px] leading-[1.8] text-gray-400 max-w-[544px] mt-[27px] italic font-normal">
           Together these modules provide a structured pathway for engineers and infrastructure operators to develop the expertise required to support modern research and education environments.
         </p>
       </div>

@@ -43,7 +43,7 @@ export default async function AboutPage() {
                 {t('sectionTitlePrefix')} <em className="not-italic text-primary">{t('sectionTitleHighlight')}</em>
               </h2>
               
-              <div className="space-y-[20px] text-[14px] md:text-[15px] leading-[1.8] text-zinc-600 mb-[41px]">
+              <div className="space-y-[20px] text-[15px] md:text-[16px] leading-[1.8] text-zinc-600 mb-[41px]">
                 <p>{t('p1')}</p>
                 <p>{t('p2')}</p>
                 <p>{t('p3')}</p>

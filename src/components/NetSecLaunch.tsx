@@ -28,7 +28,7 @@ export default function NetSecLaunch() {
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[17px]">
             {t('titlePrefix')} <em className="not-italic text-primary">{t('titleHighlight')}</em>
           </h2>
-          <p className="text-[14px] md:text-[15px] text-gray-500">{t('subtitle')}</p>
+          <p className="text-[15px] md:text-[16px] text-gray-500">{t('subtitle')}</p>
         </AnimateOnScroll>
 
         <div className="relative">
@@ -44,7 +44,7 @@ export default function NetSecLaunch() {
                 
                 <div className="flex flex-col items-center text-center">
                   <h4 className="text-[17px] font-serif font-semibold text-text-main mb-[10px]">{m.title}</h4>
-                  <p className="text-[14px] md:text-[15px] text-gray-500 leading-[1.6] font-normal">{m.desc}</p>
+                  <p className="text-[15px] md:text-[16px] text-gray-500 leading-[1.6] font-normal">{m.desc}</p>
                 </div>
               </div>
             ))}
@@ -55,7 +55,7 @@ export default function NetSecLaunch() {
           <div className="mt-[85px] p-[41px] bg-primary rounded-[20px] text-white overflow-hidden relative shadow-2xl">
             <div className="max-w-[544px] relative z-10">
               <h3 className="text-[27px] font-serif font-semibold mb-[17px] tracking-tight">{t('strategicTitle')}</h3>
-              <p className="text-white/80 leading-[1.8] mb-[27px] text-[14px] font-normal">{t('strategicDesc')}</p>
+              <p className="text-white/80 leading-[1.8] mb-[27px] text-[15px] font-normal">{t('strategicDesc')}</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-[17px]">
                 {strategicPoints.map((text, i) => (
                   <div key={i} className="flex items-center gap-[10px] text-[12px] font-medium">

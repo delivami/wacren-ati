@@ -14,9 +14,9 @@ export default function ContactUI() {
       <section className="px-4 md:px-8 pb-24 md:pb-32" style={{ paddingTop: '120px' }}>
         <div className="container-wf max-w-[1020px] mx-auto text-center" style={{ marginBottom: '64px' }}>
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[17px] tracking-tighter text-text-main font-normal">
-            {t('connectTitle')} <em className="italic text-primary not-italic font-normal">{t('heroTitleHighlight')}</em>
+            {t('connectTitle')}
           </h2>
-          <p className="text-[14px] md:text-[15px] text-gray-500 max-w-[510px] font-normal leading-[1.8] mx-auto">
+          <p className="text-[15px] md:text-[16px] text-gray-500 max-w-[510px] font-normal leading-[1.8] mx-auto">
             {t('connectDesc')}
           </p>
         </div>
@@ -100,7 +100,7 @@ export default function ContactUI() {
           <div className="container-wf max-w-[680px] mx-auto bg-white rounded-3xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.05)] p-6 sm:p-8 md:p-14 lg:p-16">
             <div className="text-center mb-10" style={{ paddingTop: '24px' }}>
               <h2 className="text-[24px] font-bold text-text-main mb-3">{t('formTitle')}</h2>
-              <p className="text-gray-500 text-[14px] md:text-[15px]">{t('formDesc')}</p>
+              <p className="text-gray-500 text-[15px] md:text-[16px]">{t('formDesc')}</p>
             </div>
 
             <form className="space-y-6">

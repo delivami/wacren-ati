@@ -37,8 +37,8 @@ export default function NetSecActivities() {
                 {a.icon}
               </div>
               <div>
-                <h4 className="text-[14px] font-semibold text-text-main mb-[7px]">{a.title}</h4>
-                <p className="text-[14px] md:text-[15px] leading-[1.7] text-gray-500 font-normal">{a.desc}</p>
+                <h4 className="text-[15px] font-semibold text-text-main mb-[7px]">{a.title}</h4>
+                <p className="text-[15px] md:text-[16px] leading-[1.7] text-gray-500 font-normal">{a.desc}</p>
               </div>
             </div>
           ))}

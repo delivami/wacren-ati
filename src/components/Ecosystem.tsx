@@ -16,7 +16,7 @@ export default function Ecosystem() {
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.1] mb-[20px] tracking-tight text-white max-w-[544px] font-normal">
             {t('headingMain')} <br /><em className="italic text-accent not-italic font-normal">{t('headingHighlight')}</em>
           </h2>
-          <p className="text-[14px] leading-[1.8] text-white/70 max-w-[544px] mb-[41px] font-normal">
+          <p className="text-[15px] leading-[1.8] text-white/70 max-w-[544px] mb-[41px] font-normal">
             {t('desc')}
           </p>
 

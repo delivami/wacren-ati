@@ -32,7 +32,7 @@ export default function NetSecContent() {
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[20px] text-center">
             {t('whyTitlePrefix')} <em className="not-italic text-primary">{t('whyTitleHighlight')}</em>
           </h2>
-          <div className="text-[14px] md:text-[15px] leading-[1.8] text-gray-500 text-left">
+          <div className="text-[15px] md:text-[16px] leading-[1.8] text-gray-500 text-left">
             <p>
               {t('whyP1')} {t('whyP2')} {t('whyP3')}
             </p>
@@ -50,8 +50,8 @@ export default function NetSecContent() {
                 <div className="mb-[17px] w-[34px] h-[34px] bg-gray-50 rounded-[7px] flex items-center justify-center">
                   {item.icon}
                 </div>
-                <h4 className="text-[14px] font-semibold text-text-main mb-[10px]">{item.title}</h4>
-                <p className="text-[14px] md:text-[15px] leading-[1.6] text-gray-500 font-normal">{item.desc}</p>
+                <h4 className="text-[15px] font-semibold text-text-main mb-[10px]">{item.title}</h4>
+                <p className="text-[15px] md:text-[16px] leading-[1.6] text-gray-500 font-normal">{item.desc}</p>
               </div>
             ))}
           </AnimateOnScroll>
