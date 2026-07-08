@@ -51,22 +51,7 @@ export default function NetSecLaunch() {
           </AnimateOnScroll>
         </div>
 
-        <AnimateOnScroll animation="fadeInUp" options={{ delay: 0.1 }}>
-          <div className="mt-[85px] p-[41px] bg-primary rounded-[20px] text-white overflow-hidden relative shadow-2xl">
-            <div className="max-w-[544px] relative z-10">
-              <h3 className="text-[27px] font-serif font-semibold mb-[17px] tracking-tight">{t('strategicTitle')}</h3>
-              <p className="text-white/80 leading-[1.8] mb-[27px] text-[15px] font-normal">{t('strategicDesc')}</p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-[17px]">
-                {strategicPoints.map((text, i) => (
-                  <div key={i} className="flex items-center gap-[10px] text-[12px] font-medium">
-                    <div className="w-2 h-2 bg-accent rounded-full shadow-[0_0_10px_rgba(230,126,34,0.5)]"></div>
-                    {text}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </AnimateOnScroll>
+
       </div>
     </section>
   );
