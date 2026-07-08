@@ -26,7 +26,7 @@ export default function Community() {
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-[10px] list-none p-0 m-0">
                 {audiences.map((item, i) => (
-                  <li key={i} className="text-[11px] text-gray-500 flex items-center gap-[7px]">
+                  <li key={i} className="text-[14px] md:text-[15px] text-gray-500 flex items-center gap-[7px]">
                     <span className="text-primary font-bold">→</span> {item}
                   </li>
                 ))}
@@ -35,7 +35,7 @@ export default function Community() {
 
             <div className="lg:pt-[37px]">
               <h3 className="text-[15px] font-bold text-text-main mb-[14px]">{t('partnershipsTitle')}</h3>
-              <p className="text-[12px] leading-[1.7] text-gray-500 mb-[20px]">
+              <p className="text-[14px] md:text-[15px] leading-[1.7] text-gray-500 mb-[20px]">
                 {t('partnershipsDesc')}
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-[14px]">

@@ -38,7 +38,7 @@ export default function NetSecActivities() {
               </div>
               <div>
                 <h4 className="text-[14px] font-semibold text-text-main mb-[7px]">{a.title}</h4>
-                <p className="text-[12px] leading-[1.7] text-gray-500 font-normal">{a.desc}</p>
+                <p className="text-[14px] md:text-[15px] leading-[1.7] text-gray-500 font-normal">{a.desc}</p>
               </div>
             </div>
           ))}

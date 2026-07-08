@@ -24,7 +24,7 @@ export default function Facilitators() {
             </p>
             <ul className="list-none p-0 m-0 flex flex-col gap-[14px]">
               {roles.map((role, i) => (
-                <li key={i} className="flex items-start gap-[10px] text-[13px] text-gray-500 font-normal">
+                <li key={i} className="flex items-start gap-[10px] text-[14px] md:text-[15px] text-gray-500 font-normal">
                   <span className="text-accent font-medium">→</span>
                   {role}
                 </li>
@@ -40,7 +40,7 @@ export default function Facilitators() {
                 </svg>
               </div>
               <h3 className="text-[17px] font-semibold text-text-main mb-[10px]">{t('cardTitle')}</h3>
-              <p className="text-[12px] leading-[1.6] text-gray-500 mb-[20px]">
+              <p className="text-[14px] md:text-[15px] leading-[1.6] text-gray-500 mb-[20px]">
                 {t('cardDesc')}
               </p>
               <Link 

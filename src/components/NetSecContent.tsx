@@ -51,7 +51,7 @@ export default function NetSecContent() {
                   {item.icon}
                 </div>
                 <h4 className="text-[14px] font-semibold text-text-main mb-[10px]">{item.title}</h4>
-                <p className="text-[11px] leading-[1.6] text-gray-500 font-normal">{item.desc}</p>
+                <p className="text-[14px] md:text-[15px] leading-[1.6] text-gray-500 font-normal">{item.desc}</p>
               </div>
             ))}
           </AnimateOnScroll>

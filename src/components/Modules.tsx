@@ -33,7 +33,7 @@ export default function Modules() {
                   {m.tag}
                 </span>
               </div>
-              <p className="text-[11px] text-gray-500 leading-relaxed font-normal">
+              <p className="text-[14px] md:text-[15px] text-gray-500 leading-relaxed font-normal">
                 {m.focus}
               </p>
             </div>
@@ -54,7 +54,7 @@ export default function Modules() {
               {modules.map((m) => (
                 <tr key={m.id} className="border-b border-gray-100 hover:bg-gray-50 transition-colors">
                   <td className="px-[17px] py-[14px] text-[12px] font-semibold text-text-main">{m.name}</td>
-                  <td className="px-[17px] py-[14px] text-[12px] text-gray-500 font-normal">{m.focus}</td>
+                  <td className="px-[17px] py-[14px] text-[14px] md:text-[15px] text-gray-500 font-normal">{m.focus}</td>
                   <td className="px-[17px] py-[14px]">
                     <span className="text-[10px] font-mono text-primary font-medium">{m.tag}</span>
                   </td>

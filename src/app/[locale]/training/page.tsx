@@ -50,7 +50,7 @@ export default function TrainingPage() {
             <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[14px]">
               {t('curriculumTitle')} <em className="not-italic text-primary">{t('curriculumHighlight')}</em>
             </h2>
-            <p className="text-[14px] text-zinc-500 mx-auto leading-[1.8] whitespace-pre-wrap text-left">
+            <p className="text-[14px] md:text-[15px] text-zinc-500 mx-auto leading-[1.8] whitespace-pre-wrap text-left">
               {t('curriculumDesc')}
             </p>
           </AnimateOnScroll>
@@ -65,7 +65,7 @@ export default function TrainingPage() {
                     <h3 className="text-[13px] font-semibold text-text-main leading-tight">{m.name}</h3>
                     <span className="text-[9px] font-mono text-primary font-medium px-[7px] py-[2px] bg-primary/5 rounded border border-primary/10 whitespace-nowrap shrink-0">{m.tag}</span>
                   </div>
-                  <p className="text-[11px] text-gray-500 leading-relaxed">{m.focus}</p>
+                  <p className="text-[14px] md:text-[15px] text-gray-500 leading-relaxed">{m.focus}</p>
                 </div>
               ))}
             </div>

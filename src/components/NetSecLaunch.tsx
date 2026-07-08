@@ -44,7 +44,7 @@ export default function NetSecLaunch() {
                 
                 <div className="flex flex-col items-center text-center">
                   <h4 className="text-[17px] font-serif font-semibold text-text-main mb-[10px]">{m.title}</h4>
-                  <p className="text-[12px] text-gray-500 leading-[1.6] font-normal">{m.desc}</p>
+                  <p className="text-[14px] md:text-[15px] text-gray-500 leading-[1.6] font-normal">{m.desc}</p>
                 </div>
               </div>
             ))}

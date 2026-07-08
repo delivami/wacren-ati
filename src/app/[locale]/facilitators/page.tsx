@@ -46,13 +46,13 @@ export default async function FacilitatorsPage() {
                 <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[17px] tracking-tighter text-zinc-900 font-normal">
                   {t('communityTitlePrefix')} <em className="not-italic text-primary">{t('communityTitleHighlight')}</em>
                 </h2>
-                <p className="text-[14px] leading-[1.8] text-zinc-500 mb-[31px]">
+                <p className="text-[14px] md:text-[15px] leading-[1.8] text-zinc-500 mb-[31px]">
                   {t('communityDesc')}
                 </p>
 
                 <ul className="list-none p-0 m-0 flex flex-col gap-[14px]">
                   {(t.raw('communityRoles') as string[]).map((item, i) => (
-                    <li key={i} className="flex items-start gap-[12px] text-[13px] text-zinc-600 leading-[1.7]">
+                    <li key={i} className="flex items-start gap-[12px] text-[14px] md:text-[15px] text-zinc-600 leading-[1.7]">
                       <span className="mt-[3px] shrink-0 w-[20px] h-[20px] rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-[10px]">→</span>
                       {item}
                     </li>
@@ -93,7 +93,7 @@ export default async function FacilitatorsPage() {
               <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[14px]">
                 {t('expertiseTitlePrefix')} <em className="not-italic text-primary">{t('expertiseTitleHighlight')}</em>
               </h2>
-              <p className="text-[14px] text-zinc-500 max-w-[476px] mx-auto leading-[1.8]">
+              <p className="text-[14px] md:text-[15px] text-zinc-500 max-w-[476px] mx-auto leading-[1.8]">
                 {t('expertiseDesc')}
               </p>
             </AnimateOnScroll>
@@ -109,7 +109,7 @@ export default async function FacilitatorsPage() {
                   </h3>
                   <ul className="list-none p-0 m-0 flex flex-col gap-[9px]">
                     {area.items.map((item, j) => (
-                      <li key={j} className="flex items-start gap-[9px] text-[12px] text-zinc-500 leading-[1.6]">
+                      <li key={j} className="flex items-start gap-[9px] text-[14px] md:text-[15px] text-zinc-500 leading-[1.6]">
                         <span className="text-primary shrink-0 font-bold mt-[1px]">—</span>
                         {item}
                       </li>
@@ -130,7 +130,7 @@ export default async function FacilitatorsPage() {
                   <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[14px]">
                     {t('whoShouldApplyTitlePrefix')} <em className="not-italic text-primary">{t('whoShouldApplyTitleHighlight')}</em>
                   </h2>
-                  <p className="text-[14px] text-zinc-500 leading-[1.8]">
+                  <p className="text-[14px] md:text-[15px] text-zinc-500 leading-[1.8]">
                     {t('whoShouldApplyDesc')}
                   </p>
                 </div>
