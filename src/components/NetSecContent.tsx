@@ -32,10 +32,10 @@ export default function NetSecContent() {
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[20px] text-center">
             {t('whyTitlePrefix')} <em className="not-italic text-primary">{t('whyTitleHighlight')}</em>
           </h2>
-          <div className="text-[15px] md:text-[16px] leading-[1.8] text-gray-500 text-left">
-            <p>
-              {t('whyP1')} {t('whyP2')} {t('whyP3')}
-            </p>
+          <div className="space-y-[20px] text-[15px] md:text-[16px] leading-[1.8] text-gray-500 text-left">
+            <p>{t('whyP1')}</p>
+            <p>{t('whyP2')}</p>
+            <p>{t('whyP3')}</p>
           </div>
         </AnimateOnScroll>
 
