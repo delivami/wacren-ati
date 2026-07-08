@@ -50,7 +50,7 @@ export default function TrainingPage() {
             <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[14px]">
               {t('curriculumTitle')} <em className="not-italic text-primary">{t('curriculumHighlight')}</em>
             </h2>
-            <p className="text-[14px] text-zinc-500 mx-auto leading-[1.8] whitespace-pre-wrap">
+            <p className="text-[14px] text-zinc-500 mx-auto leading-[1.8] whitespace-pre-wrap text-left">
               {t('curriculumDesc')}
             </p>
           </AnimateOnScroll>

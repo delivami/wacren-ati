@@ -32,7 +32,7 @@ export default function NetSecContent() {
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[20px] text-center">
             {t('whyTitlePrefix')} <em className="not-italic text-primary">{t('whyTitleHighlight')}</em>
           </h2>
-          <div className="text-[13px] md:text-[14px] leading-[1.8] text-gray-500 text-center">
+          <div className="text-[14px] md:text-[15px] leading-[1.8] text-gray-500 text-left">
             <p>
               {t('whyP1')} {t('whyP2')} {t('whyP3')}
             </p>
