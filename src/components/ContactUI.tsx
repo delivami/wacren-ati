@@ -13,9 +13,6 @@ export default function ContactUI() {
       {/* Let's Connect Section */}
       <section className="px-4 md:px-8 pb-24 md:pb-32" style={{ paddingTop: '120px' }}>
         <div className="container-wf max-w-[1020px] mx-auto text-center" style={{ marginBottom: '64px' }}>
-          <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-text-main font-normal">
-            {t('connectTitle')}
-          </h2>
         </div>
 
         <div className="container-wf max-w-[1020px] mx-auto">
