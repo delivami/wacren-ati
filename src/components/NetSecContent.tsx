@@ -28,7 +28,7 @@ export default function NetSecContent() {
   return (
     <section className="py-[68px] bg-white">
       <div className="container-wf">
-        <AnimateOnScroll animation="fadeInUp" className="max-w-[800px] mx-auto mb-[85px]">
+        <AnimateOnScroll animation="fadeInUp" className="max-w-[1020px] mx-auto mb-[85px]">
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[20px] text-center">
             {t('whyTitlePrefix')} <em className="not-italic text-primary">{t('whyTitleHighlight')}</em>
           </h2>
