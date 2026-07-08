@@ -17,12 +17,12 @@ export default function NotFound() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="text-[120px] lg:text-[180px] font-serif leading-none text-white/5 tracking-tighter absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none italic">
+          <div className="text-[102px] lg:text-[153px] font-serif leading-none text-white/5 tracking-tighter absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none pointer-events-none italic">
             404
           </div>
           
           <div className="mb-8">
-            <span className="inline-block px-4 py-1 bg-accent/20 text-accent text-[11px] font-bold uppercase tracking-[0.2em] rounded-full mb-6 border border-accent/20">
+            <span className="inline-block px-4 py-1 bg-accent/20 text-accent text-[9px] font-bold uppercase tracking-[0.2em] rounded-full mb-6 border border-accent/20">
               Connection Lost
             </span>
             <h1 className="text-4xl lg:text-6xl font-serif text-white mb-6 font-normal tracking-tight">
@@ -36,13 +36,13 @@ export default function NotFound() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link 
               href="/" 
-              className="px-10 py-4 bg-accent text-white text-[13px] font-bold uppercase tracking-[0.1em] rounded-[6px] hover:bg-accent/90 transition-all shadow-xl hover:-translate-y-0.5 no-underline"
+              className="px-10 py-4 bg-accent text-white text-[11px] font-bold uppercase tracking-[0.1em] rounded-[5px] hover:bg-accent/90 transition-all shadow-xl hover:-translate-y-0.5 no-underline"
             >
               Back to Home
             </Link>
             <Link 
               href="/netsec" 
-              className="px-10 py-4 bg-white/5 border border-white/20 text-white text-[13px] font-semibold uppercase tracking-[0.1em] rounded-[6px] hover:bg-white/10 transition-all no-underline"
+              className="px-10 py-4 bg-white/5 border border-white/20 text-white text-[11px] font-semibold uppercase tracking-[0.1em] rounded-[5px] hover:bg-white/10 transition-all no-underline"
             >
               Explore Forum
             </Link>

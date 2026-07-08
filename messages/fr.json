@@ -43,7 +43,7 @@
     "p1": "L'Initiative de Formation Africaine (ATI) est un programme de développement des capacités techniques conçu pour renforcer l'expertise nécessaire à l'exploitation de l'infrastructure numérique de recherche et d'éducation à travers l'Afrique.",
     "p2": "Alors que les universités et les institutions de recherche s'appuient de plus en plus sur les plateformes numériques pour la collaboration, l'apprentissage et la science ouverte, le besoin d'ingénieurs qualifiés ne cesse de croître. L'ATI répond à ce besoin en proposant des programmes de renforcement des capacités structurés pour les ingénieurs informatiques, les administrateurs système, les professionnels de la cybersécurité et les opérateurs d'infrastructure.",
     "p3": "L'ATI suit un modèle collaboratif et communautaire qui rassemble les communautés techniques à travers l'Afrique. Les participants et les facilitateurs viennent de l'ensemble de l'écosystème de la recherche et de l'éducation, y compris les groupes d'opérateurs de réseau (NOG), les équipes d'ingénierie des NREN, les opérateurs de réseaux de campus, les praticiens en cybersécurité, les ingénieurs DevOps et les spécialistes des infrastructures de science ouverte.",
-    "p4": "Les partenariats avec des communautés telles que",
+    "p4": "Nous avons des partenariats avec des communautés telles que",
     "applyBtn": "Postuler pour être Facilitateur ATI"
   },
   "Framework": {
@@ -100,7 +100,7 @@
     ],
     "whoShouldApplyTitlePrefix": "Qui Devrait",
     "whoShouldApplyTitleHighlight": "Postuler",
-    "whoShouldApplyDesc": "Nous encourageons les candidatures de :",
+    "whoShouldApplyDesc": "Les candidats doivent avoir une expérience opérationnelle pratique et un intérêt à contribuer au renforcement des capacités au sein de la communauté de la recherche et de l'éducation.",
     "whoShouldApplyRoles": [
       "Ingénieurs et opérateurs NREN",
       "Ingénieurs réseau universitaires",
@@ -145,7 +145,7 @@
     "titlePrefix": "Programme de Formation",
     "headingMain": "Modules de Formation",
     "headingHighlight": "ATI",
-    "desc": "Les modules de formation ATI s'alignent sur les couches opérationnelles de la pile d'infrastructures numériques de recherche et d'éducation.",
+    "desc": "Les modules de formation ATI s'alignent sur les couches opérationnelles de la pile d'infrastructures numériques de recherche et d'éducation. Ensemble, ces modules offrent un parcours structuré aux ingénieurs et opérateurs d'infrastructures pour développer l'expertise nécessaire afin de soutenir les environnements modernes de recherche et d'éducation.",
     "columns": {
       "module": "Module",
       "focus": "Focus",
@@ -225,7 +225,7 @@
     ]
   },
   "Footer": {
-    "tagline": "Réseau ouest et centre-africain de recherche et d'éducation — connectant les institutions et construisant l'infrastructure numérique pour la découverte, la collaboration et la diffusion des connaissances à travers l'Afrique.",
+    "tagline": "L'Initiative de Formation Africaine (ATI) est un programme de développement des capacités techniques conçu pour renforcer l'expertise nécessaire à l'exploitation de l'infrastructure numérique de recherche et d'éducation à travers l'Afrique.",
     "atiTitle": "PROGRAMME ATI",
     "programmesTitle": "PROGRAMMES",
     "wacrenTitle": "WACREN",
@@ -243,10 +243,7 @@
       { "label": "Africa Digital Campus", "href": "https://digitalcampus.africa/" }
     ],
     "wacrenLinks": [
-      { "label": "À propos du WACREN", "href": "https://www.wacren.net/about" },
-      { "label": "Conférence WACREN 2026", "href": "https://wacren.net/conference" },
-      { "label": "Actualités", "href": "https://www.wacren.net/news" },
-      { "label": "Contact", "href": "/contact" }
+      { "label": "À propos du WACREN", "href": "https://www.wacren.net/about" }
     ],
     "copyright": "Copyright \u00a9 {year} WACREN. Tous droits réservés.",
     "funded": "Le programme de l'Initiative de Formation en Afrique (ATI) est soutenu par le projet AfricaConnect, cofinancé par l'Union européenne dans le cadre du programme Global Gateway."
@@ -272,7 +269,7 @@
     "heroDesc": "Construire la communauté de cybersécurité de la recherche et de l'éducation en Afrique grâce à des échanges techniques, des formations opérationnelles et une collaboration de confiance.",
     "curriculumTitle": "Programme de",
     "curriculumHighlight": "Formation",
-    "curriculumDesc": "Les modules de formation de l'ATI s'alignent sur les couches opérationnelles de la pile d'infrastructures numériques de la recherche et de l'éducation.",
+    "curriculumDesc": "Les modules de formation de l'ATI s'alignent sur les couches opérationnelles de la pile d'infrastructures numériques de la recherche et de l'éducation. Ensemble, ces modules offrent un parcours structuré aux ingénieurs et opérateurs d'infrastructures pour développer l'expertise nécessaire afin de soutenir les environnements modernes de recherche et d'éducation.",
     "tableHeaders": {
       "module": "MODULE",
       "focus": "OBJECTIF",

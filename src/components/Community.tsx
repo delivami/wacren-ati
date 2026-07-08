@@ -10,39 +10,39 @@ export default function Community() {
   const partners = t.raw('partners') as { name: string; subtitle: string }[];
 
   return (
-    <section id="community" className="py-[72px] bg-bg-soft">
+    <section id="community" className="py-[61px] bg-bg-soft">
       <div className="container-wf">
         <AnimateOnScroll animation="fadeInUp">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_500px] gap-[64px] items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_500px] gap-[54px] items-start">
             <div>
-              <span className="font-mono text-[10px] tracking-[0.1em] text-primary opacity-70 uppercase mb-[8px] block font-bold">
+              <span className="font-mono text-[9px] tracking-[0.1em] text-primary opacity-70 uppercase mb-[7px] block font-bold">
                 {t('titlePrefix')}
               </span>
-              <h2 className="font-serif text-[32px] md:text-[42px] leading-[1.2] mb-[20px] tracking-tighter text-text-main">
+              <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[17px] tracking-tighter text-text-main">
                 {t('headingMain')} <em className="italic text-primary not-italic">{t('headingHighlight')}</em>
               </h2>
-              <p className="text-[15px] leading-[1.8] text-gray-500 mb-[32px]">
+              <p className="text-[13px] leading-[1.8] text-gray-500 mb-[27px]">
                 {t('desc')}
               </p>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-[12px] list-none p-0 m-0">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-[10px] list-none p-0 m-0">
                 {audiences.map((item, i) => (
-                  <li key={i} className="text-[13px] text-gray-500 flex items-center gap-[8px]">
+                  <li key={i} className="text-[11px] text-gray-500 flex items-center gap-[7px]">
                     <span className="text-primary font-bold">→</span> {item}
                   </li>
                 ))}
               </ul>
             </div>
 
-            <div className="lg:pt-[44px]">
-              <h3 className="text-[18px] font-bold text-text-main mb-[16px]">{t('partnershipsTitle')}</h3>
-              <p className="text-[14px] leading-[1.7] text-gray-500 mb-[24px]">
+            <div className="lg:pt-[37px]">
+              <h3 className="text-[15px] font-bold text-text-main mb-[14px]">{t('partnershipsTitle')}</h3>
+              <p className="text-[12px] leading-[1.7] text-gray-500 mb-[20px]">
                 {t('partnershipsDesc')}
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-[16px]">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-[14px]">
                 {partners.map((p, i) => (
-                  <div key={i} className="bg-white border-t-2 border-primary rounded-[6px] p-[20px] flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-shadow">
-                    <span className="text-[14px] font-bold text-text-main mb-[4px]">{p.name}</span>
-                    <span className="text-[11px] text-gray-400 font-medium">{p.subtitle}</span>
+                  <div key={i} className="bg-white border-t-2 border-primary rounded-[5px] p-[17px] flex flex-col items-center justify-center text-center shadow-sm hover:shadow-md transition-shadow">
+                    <span className="text-[12px] font-bold text-text-main mb-[3px]">{p.name}</span>
+                    <span className="text-[9px] text-gray-400 font-medium">{p.subtitle}</span>
                   </div>
                 ))}
               </div>

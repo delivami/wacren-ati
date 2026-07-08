@@ -18,35 +18,32 @@ export default async function AboutPage() {
       <Navigation />
       <main className="flex-1">
         {/* Hero */}
-        <section className="relative bg-primary text-white py-[60px] lg:py-[80px] overflow-hidden">
+        <section className="relative bg-primary text-white py-[51px] lg:py-[68px] overflow-hidden">
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <div className="absolute inset-0 opacity-40" style={{ 
               background: 'radial-gradient(ellipse 60% 80% at 70% 50%, rgba(230,126,34,0.15) 0%, transparent 65%), radial-gradient(ellipse 30% 40% at 20% 80%, rgba(255,255,255,0.05) 0%, transparent 60%)' 
             }}></div>
-            <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-black/10 to-transparent"></div>
+            <div className="absolute bottom-0 left-0 w-full h-[170px] bg-gradient-to-t from-black/10 to-transparent"></div>
           </div>
 
           <div className="container-wf relative z-10 flex justify-center w-full">
-            <div className="text-center w-full max-w-[1200px] flex flex-col items-center">
-              <h1 className="text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-serif leading-[1.1] mb-4 tracking-tighter">
+            <div className="text-center w-full max-w-[1020px] flex flex-col items-center">
+              <h1 className="text-[27px] sm:text-[34px] md:text-[44px] lg:text-[54px] font-serif leading-[1.1] tracking-tighter">
                 {t('heroTitle')} <span className="text-accent">{t('heroHighlight')}</span>
               </h1>
-              <p className="text-[16px] md:text-[18px] text-white/80 leading-[1.6] max-w-[850px]">
-                {t('heroDesc')}
-              </p>
             </div>
           </div>
         </section>
 
         {/* Content */}
-        <section className="py-20 md:py-[100px] bg-white">
+        <section className="py-20 md:py-[85px] bg-white">
           <div className="container-wf">
             <AnimateOnScroll animation="fadeInUp" className="w-full text-left flex flex-col">
-              <h2 className="font-serif text-[32px] md:text-[42px] leading-[1.2] mb-[32px] tracking-tighter text-zinc-900 font-normal text-center">
+              <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[27px] tracking-tighter text-zinc-900 font-normal text-center">
                 {t('sectionTitlePrefix')} <em className="not-italic text-primary">{t('sectionTitleHighlight')}</em>
               </h2>
               
-              <div className="space-y-[24px] text-[16px] md:text-[18px] leading-[1.8] text-zinc-600 mb-[48px]">
+              <div className="space-y-[20px] text-[14px] md:text-[15px] leading-[1.8] text-zinc-600 mb-[41px]">
                 <p>{t('p1')}</p>
                 <p>{t('p2')}</p>
                 <p>{t('p3')}</p>
@@ -60,7 +57,7 @@ export default async function AboutPage() {
                   href="https://survey.wacren.net/index.php/291743" 
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-[32px] py-[16px] bg-primary text-white rounded-[6px] font-bold text-[14px] hover:bg-primary-dark transition-all shadow-lg uppercase tracking-[0.05em]"
+                  className="inline-flex items-center gap-2 px-[27px] py-[14px] bg-primary text-white rounded-[5px] font-bold text-[12px] hover:bg-primary-dark transition-all shadow-lg uppercase tracking-[0.05em]"
                 >
                   {t('applyBtn')} →
                 </a>
@@ -68,7 +65,7 @@ export default async function AboutPage() {
                   href="/documents/ATI-Programme-Framework.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-3 px-[32px] py-[16px] bg-accent text-white rounded-[6px] font-bold text-[14px] hover:bg-accent/90 transition-all shadow-lg uppercase tracking-[0.05em]"
+                  className="group inline-flex items-center gap-3 px-[27px] py-[14px] bg-accent text-white rounded-[5px] font-bold text-[12px] hover:bg-accent/90 transition-all shadow-lg uppercase tracking-[0.05em]"
                 >
                   {tFramework('downloadBtn')}
                   <span className="transition-transform group-hover:translate-y-1">↓</span>

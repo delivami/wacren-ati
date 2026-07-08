@@ -43,7 +43,7 @@
     "p1": "The Africa Training Initiative (ATI) is a technical capacity development programme designed to build and strengthen the expertise required to operate research and education digital infrastructure across Africa.",
     "p2": "As universities and research institutions increasingly rely on digital platforms for research collaboration, digital learning, and open science, the need for skilled engineers to deploy and operate complex infrastructure continues to grow. ATI addresses this need by providing structured capacity-building programmes for IT engineers, system administrators, cybersecurity professionals, and infrastructure operators across the research and education community in Africa.",
     "p3": "ATI follows a collaborative, community model that brings together technical communities across Africa. Training participants and facilitators come from across the research and education ecosystem, including Network Operator Groups (NOGs), NREN engineering teams, campus network operators, cybersecurity practitioners, DevOps engineers and open science infrastructure specialists.",
-    "p4": "Partnerships with communities such as",
+    "p4": "We have partnerships with communities such as",
     "applyBtn": "Apply to be an ATI Facilitator"
   },
   "Framework": {
@@ -100,7 +100,7 @@
     ],
     "whoShouldApplyTitlePrefix": "Who Should",
     "whoShouldApplyTitleHighlight": "Apply",
-    "whoShouldApplyDesc": "We encourage applications from:",
+    "whoShouldApplyDesc": "Applicants should have practical operational experience and an interest in contributing to capacity development across the research and education community.",
     "whoShouldApplyRoles": [
       "NREN engineers and operators",
       "University network engineers",
@@ -145,7 +145,7 @@
     "titlePrefix": "Training Curriculum",
     "headingMain": "ATI Training",
     "headingHighlight": "Modules",
-    "desc": "ATI training modules align with the operational layers of the research and education digital infrastructure stack.",
+    "desc": "ATI training modules align with the operational layers of the research and education digital infrastructure stack. Together these modules provide a structured pathway for engineers and infrastructure operators to develop the expertise required to support modern research and education environments.",
     "columns": {
       "module": "Module",
       "focus": "Focus",
@@ -225,7 +225,7 @@
     ]
   },
   "Footer": {
-    "tagline": "West and Central African Research and Education Network — connecting institutions and building the digital infrastructure for discovery, collaboration, and knowledge dissemination across Africa.",
+    "tagline": "The Africa Training Initiative (ATI) is a technical capacity development programme designed to build and strengthen the expertise required to operate research and education digital infrastructure across Africa.",
     "atiTitle": "ATI PROGRAMME",
     "programmesTitle": "PROGRAMMES",
     "wacrenTitle": "WACREN",
@@ -243,10 +243,7 @@
       { "label": "Africa Digital Campus", "href": "https://digitalcampus.africa/" }
     ],
     "wacrenLinks": [
-      { "label": "About WACREN", "href": "https://www.wacren.net/about" },
-      { "label": "WACREN 2026 Conference", "href": "https://wacren.net/conference" },
-      { "label": "News & Updates", "href": "https://www.wacren.net/news" },
-      { "label": "Contact", "href": "/contact" }
+      { "label": "About WACREN", "href": "https://www.wacren.net/about" }
     ],
     "copyright": "Copyright \u00a9 {year} WACREN. All rights reserved.",
     "funded": "The Africa Training Initiative (ATI) Program is supported by the AfricaConnect Project, co-funded by the European Union through the Global Gateway Program."
@@ -272,7 +269,7 @@
     "heroDesc": "Building Africa’s Research & Education Cybersecurity Community through technical exchange, operational training, and trusted collaboration.",
     "curriculumTitle": "Training",
     "curriculumHighlight": "Curriculum",
-    "curriculumDesc": "ATI training modules align with the operational layers of the research and education digital infrastructure stack.",
+    "curriculumDesc": "ATI training modules align with the operational layers of the research and education digital infrastructure stack. Together these modules provide a structured pathway for engineers and infrastructure operators to develop the expertise required to support modern research and education environments.",
     "tableHeaders": {
       "module": "MODULE",
       "focus": "FOCUS",

@@ -43,7 +43,7 @@
     "p1": "A Iniciativa de Treinamento Africana (ATI) é um programa de desenvolvimento de capacidade técnica projetado para construir e fortalecer a expertise necessária para operar a infraestrutura digital de pesquisa e educação em toda a África.",
     "p2": "Como as universidades e instituições de pesquisa dependem cada vez mais de plataformas digitais para colaboração, aprendizado digital e ciência aberta, a necessidade de engenheiros qualificados continua a crescer. A ATI aborda essa necessidade fornecendo programas estruturados de capacitação para engenheiros de TI, administradores de sistemas, profissionais de cibersegurança e operadores de infraestrutura.",
     "p3": "A ATI segue um modelo colaborativo e comunitário que reúne comunidades técnicas em toda a África. Os participantes e facilitadores vêm de todo o ecossistema de pesquisa e educação, incluindo Grupos de Operadores de Rede (NOGs), equipes de engenharia de NRENs, operadores de redes de campus, profissionais de cibersegurança, engenheiros DevOps e especialistas em infraestrutura de ciência aberta.",
-    "p4": "Parcerias com comunidades como",
+    "p4": "Temos parcerias com comunidades como",
     "applyBtn": "Candidatar-se para ser Facilitador ATI"
   },
   "Framework": {
@@ -100,7 +100,7 @@
     ],
     "whoShouldApplyTitlePrefix": "Quem Deve Se",
     "whoShouldApplyTitleHighlight": "Candidatar",
-    "whoShouldApplyDesc": "Encorajamos inscrições de:",
+    "whoShouldApplyDesc": "Os candidatos devem ter experiência operacional prática e interesse em contribuir para o desenvolvimento de capacidades na comunidade de pesquisa e educação.",
     "whoShouldApplyRoles": [
       "Engenheiros e operadores de NREN",
       "Engenheiros de rede universitários",
@@ -145,7 +145,7 @@
     "titlePrefix": "Currículo de Treinamento",
     "headingMain": "Módulos de Treinamento",
     "headingHighlight": "ATI",
-    "desc": "Os módulos de treinamento da ATI estão alinhados com as camadas operacionais da infraestrutura digital de pesquisa e educação.",
+    "desc": "Os módulos de treinamento da ATI estão alinhados com as camadas operacionais da infraestrutura digital de pesquisa e educação. Juntos, esses módulos oferecem um caminho estruturado para engenheiros e operadores de infraestrutura desenvolverem a expertise necessária para apoiar os ambientes modernos de pesquisa e educação.",
     "columns": {
       "module": "Módulo",
       "focus": "Foco",
@@ -225,7 +225,7 @@
     ]
   },
   "Footer": {
-    "tagline": "Rede de Pesquisa e Educação da África Ocidental e Central — conectando instituições e construindo a infraestrutura digital para descobertas, colaboração e disseminação do conhecimento em toda a África.",
+    "tagline": "A Iniciativa de Treinamento Africana (ATI) é um programa de desenvolvimento de capacidade técnica projetado para construir e fortalecer a expertise necessária para operar a infraestrutura digital de pesquisa e educação em toda a África.",
     "atiTitle": "PROGRAMA ATI",
     "programmesTitle": "PROGRAMAS",
     "wacrenTitle": "WACREN",
@@ -243,10 +243,7 @@
       { "label": "Africa Digital Campus", "href": "https://digitalcampus.africa/" }
     ],
     "wacrenLinks": [
-      { "label": "Sobre a WACREN", "href": "https://www.wacren.net/about" },
-      { "label": "Conferência WACREN 2026", "href": "https://wacren.net/conference" },
-      { "label": "Notícias e Atualizações", "href": "https://www.wacren.net/news" },
-      { "label": "Contacto", "href": "/contact" }
+      { "label": "Sobre a WACREN", "href": "https://www.wacren.net/about" }
     ],
     "copyright": "Copyright \u00a9 {year} WACREN. Todos os direitos reservados.",
     "funded": "O Programa da Iniciativa de Treinamento em África (ATI) é apoiado pelo Projeto AfricaConnect, cofinanciado pela União Europeia através do Programa Global Gateway."
@@ -272,7 +269,7 @@
     "heroDesc": "Construir a Comunidade de Cibersegurança em Pesquisa e Educação em África através de intercâmbio técnico, treinamento operacional e colaboração de confiança.",
     "curriculumTitle": "Currículo de",
     "curriculumHighlight": "Treinamento",
-    "curriculumDesc": "Os módulos de treinamento da ATI alinham-se com as camadas operacionais da pilha de infraestruturas digitais de pesquisa e educação.",
+    "curriculumDesc": "Os módulos de treinamento da ATI alinham-se com as camadas operacionais da pilha de infraestruturas digitais de pesquisa e educação. Juntos, esses módulos oferecem um caminho estruturado para engenheiros e operadores de infraestrutura desenvolverem a expertise necessária para apoiar os ambientes modernos de pesquisa e educação.",
     "tableHeaders": {
       "module": "MÓDULO",
       "focus": "FOCO",

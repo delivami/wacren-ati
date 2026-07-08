@@ -16,7 +16,7 @@ const languages = [
     label: 'EN',
     flag: (
       // United Kingdom flag (SVG inline so no extra asset needed)
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" className="w-5 h-[13px] rounded-[2px] shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" className="w-5 h-[11px] rounded-[1px] shrink-0">
         <clipPath id="t"><path d="M30,15 h30 v15 z"/></clipPath>
         <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
         <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
@@ -31,7 +31,7 @@ const languages = [
     label: 'FR',
     flag: (
       // French flag
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" className="w-5 h-[13px] rounded-[2px] shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 2" className="w-5 h-[11px] rounded-[1px] shrink-0">
         <rect width="3" height="2" fill="#ED2939"/>
         <rect width="2" height="2" fill="#fff"/>
         <rect width="1" height="2" fill="#002395"/>
@@ -43,7 +43,7 @@ const languages = [
     label: 'PT',
     flag: (
       // Portuguese flag (simplified)
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 4" className="w-5 h-[13px] rounded-[2px] shrink-0">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 4" className="w-5 h-[11px] rounded-[1px] shrink-0">
         <rect width="6" height="4" fill="#FF0000"/>
         <rect width="2.4" height="4" fill="#006600"/>
         <circle cx="2.4" cy="2" r="0.8" fill="#FFFF00"/>
@@ -61,8 +61,8 @@ const navLinksKeys = [
   { key: 'facilitators', href: '/facilitators' },
   { key: 'training',     href: '/training' },
   { key: 'netsec', href: '/netsec' },
-  { key: 'events',       href: '/events' },
-  { key: 'blog',         href: '/blog' },
+  { key: 'events',       href: 'https://indico.wacren.net/event/263' },
+  { key: 'blog',         href: '#' },
 ];
 
 export default function Navigation() {
@@ -98,7 +98,7 @@ export default function Navigation() {
   const currentLang = languages.find(l => l.code === activeLang)!;
 
   return (
-    <nav className="sticky top-0 z-[100] bg-white border-b border-zinc-100 w-full h-[64px] flex items-center shadow-sm">
+    <nav className="sticky top-0 z-[100] bg-white border-b border-zinc-100 w-full h-[54px] flex items-center shadow-sm">
       <div className="container-wf flex items-center justify-between w-full gap-4">
 
         {/* ── Logo ── */}
@@ -108,18 +108,20 @@ export default function Navigation() {
             alt="WACREN ATI Logo"
             width={220}
             height={48}
-            className="h-[46px] w-auto"
+            className="h-[39px] w-auto"
             priority
           />
         </Link>
 
         {/* ── Desktop Nav Links ── */}
-        <ul className="hidden lg:flex items-center gap-[2px] list-none m-0 p-0 flex-1 justify-center">
+        <ul className="hidden lg:flex items-center gap-[1px] list-none m-0 p-0 flex-1 justify-center">
           {navLinksKeys.map((link) => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`px-[11px] py-[6px] text-[13px] font-medium transition-all rounded-[4px] no-underline whitespace-nowrap ${
+                target={link.href.startsWith('http') ? '_blank' : undefined}
+                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                className={`px-[12px] py-[6px] text-[14px] font-medium transition-all rounded-[4px] no-underline whitespace-nowrap ${
                   isActive(link.href)
                     ? 'text-primary bg-primary/8 font-semibold'
                     : 'text-zinc-600 hover:text-primary hover:bg-primary/5'
@@ -138,13 +140,13 @@ export default function Navigation() {
           <div className="relative" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={() => setLangOpen(!langOpen)}
-              className="flex items-center gap-2 px-2.5 py-1.5 rounded-[6px] border border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 transition-all bg-white"
+              className="flex items-center gap-2 px-2.5 py-1.5 rounded-[5px] border border-zinc-200 hover:border-zinc-300 hover:bg-zinc-50 transition-all bg-white"
               aria-label="Select language"
             >
-              <span className="block rounded-[2px] overflow-hidden shadow-sm">
+              <span className="block rounded-[1px] overflow-hidden shadow-sm">
                 {currentLang.flag}
               </span>
-              <span className="text-[12px] font-bold text-zinc-700 uppercase tracking-wide">
+              <span className="text-[10px] font-bold text-zinc-700 uppercase tracking-wide">
                 {currentLang.label}
               </span>
               <ChevronDown size={14} className={`text-zinc-400 transition-transform duration-200 ${langOpen ? 'rotate-180' : ''}`} />
@@ -167,13 +169,13 @@ export default function Navigation() {
                         router.replace(pathname, { locale: lang.code });
                         setLangOpen(false); 
                       }}
-                      className={`w-full flex items-center gap-3 px-4 py-2.5 text-[13px] font-medium transition-colors text-left ${
+                      className={`w-full flex items-center gap-3 px-4 py-2.5 text-[11px] font-medium transition-colors text-left ${
                         activeLang === lang.code
                           ? 'bg-primary/5 text-primary'
                           : 'text-zinc-600 hover:bg-zinc-50 hover:text-zinc-900'
                       }`}
                     >
-                      <span className="rounded-[2px] overflow-hidden shadow-sm">{lang.flag}</span>
+                      <span className="rounded-[1px] overflow-hidden shadow-sm">{lang.flag}</span>
                       <span>{lang.label === 'EN' ? 'English' : lang.label === 'FR' ? 'Français' : 'Português'}</span>
                       {activeLang === lang.code && (
                         <span className="ml-auto w-1.5 h-1.5 rounded-full bg-primary" />
@@ -221,7 +223,7 @@ export default function Navigation() {
             className="fixed inset-0 z-[110] bg-primary lg:hidden flex flex-col"
           >
             {/* Mobile header row */}
-            <div className="h-[64px] flex items-center px-6 border-b border-white/10 shrink-0">
+            <div className="h-[54px] flex items-center px-6 border-b border-white/10 shrink-0">
               <div className="flex items-center justify-between w-full">
                 <Link href="/" onClick={() => setIsOpen(false)} className="no-underline">
                   <Image
@@ -229,7 +231,7 @@ export default function Navigation() {
                     alt="WACREN ATI Logo"
                     width={140}
                     height={32}
-                    className="h-[32px] w-auto brightness-0 invert"
+                    className="h-[27px] w-auto brightness-0 invert"
                   />
                 </Link>
                 <button
@@ -257,9 +259,11 @@ export default function Navigation() {
                     <Link
                       href={link.href}
                       onClick={() => setIsOpen(false)}
-                      className={`text-[22px] font-medium tracking-tight no-underline transition-colors ${
+                      target={link.href.startsWith('http') ? '_blank' : undefined}
+                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                      className={`text-[19px] font-medium tracking-tight no-underline transition-colors ${
                         isActive(link.href)
-                          ? 'text-white border-l-[3px] border-white/80 pl-4 -ml-4 font-semibold'
+                          ? 'text-white border-l-[2px] border-white/80 pl-4 -ml-4 font-semibold'
                           : 'text-white/80 hover:text-white'
                       }`}
                     >
@@ -271,7 +275,7 @@ export default function Navigation() {
 
               {/* Language selector (mobile) */}
               <div className="mt-10">
-                <p className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-mono mb-3">Language</p>
+                <p className="text-white/40 text-[9px] uppercase tracking-[0.2em] font-mono mb-3">Language</p>
                 <div className="flex items-center gap-3">
                   {languages.map((lang) => (
                     <button
@@ -280,13 +284,13 @@ export default function Navigation() {
                         router.replace(pathname, { locale: lang.code });
                         setIsOpen(false);
                       }}
-                      className={`flex items-center gap-2 px-3 py-2 rounded-lg text-[12px] font-semibold uppercase tracking-wide transition-all ${
+                      className={`flex items-center gap-2 px-3 py-2 rounded-lg text-[10px] font-semibold uppercase tracking-wide transition-all ${
                         activeLang === lang.code
                           ? 'bg-white text-primary'
                           : 'bg-white/10 text-white/70 hover:bg-white/20 hover:text-white'
                       }`}
                     >
-                      <span className="rounded-[2px] overflow-hidden">{lang.flag}</span>
+                      <span className="rounded-[1px] overflow-hidden">{lang.flag}</span>
                       {lang.label}
                     </button>
                   ))}
@@ -298,7 +302,7 @@ export default function Navigation() {
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="block w-full text-center py-4 bg-white text-primary font-bold uppercase tracking-wider rounded-[6px] text-[13px] no-underline shadow-lg hover:bg-white/90 transition-colors"
+                  className="block w-full text-center py-4 bg-white text-primary font-bold uppercase tracking-wider rounded-[5px] text-[11px] no-underline shadow-lg hover:bg-white/90 transition-colors"
                 >
                   {t('contact')} →
                 </Link>
@@ -306,7 +310,7 @@ export default function Navigation() {
 
               {/* Footer */}
               <div className="mt-auto pt-10 pb-6 border-t border-white/10">
-                <div className="text-white/40 text-[10px] uppercase tracking-[0.2em] font-mono text-center">
+                <div className="text-white/40 text-[9px] uppercase tracking-[0.2em] font-mono text-center">
                   WACREN ATI © {new Date().getFullYear()}
                 </div>
               </div>

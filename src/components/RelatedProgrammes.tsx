@@ -11,7 +11,7 @@ const programmes = [
     id: 'nren',
     icon: <School size={16} className="text-orange-500" />,
     iconBg: 'bg-orange-50',
-    href: 'https://wacren.net/en/programmes/nren-academy'
+    href: '#'
   },
   { 
     id: 'trust',
@@ -70,14 +70,20 @@ export default function RelatedProgrammes() {
                 </p>
               </div>
 
-              <Link 
-                href={p.href} 
-                target={p.href.startsWith('http') ? "_blank" : undefined}
-                rel={p.href.startsWith('http') ? "noopener noreferrer" : undefined}
-                className="mt-auto pt-[12px] text-[12px] font-bold text-primary hover:text-accent transition-colors no-underline flex items-center gap-[4px]"
-              >
-                {t('explore')} <span className="text-[14px]">→</span>
-              </Link>
+              {p.href === '#' ? (
+                <span className="mt-auto pt-[10px] text-[10px] font-bold text-primary/50 cursor-not-allowed flex items-center gap-[3px]">
+                  {t('explore')} <span className="text-[12px]">→</span>
+                </span>
+              ) : (
+                <Link 
+                  href={p.href} 
+                  target={p.href.startsWith('http') ? "_blank" : undefined}
+                  rel={p.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                  className="mt-auto pt-[10px] text-[10px] font-bold text-primary hover:text-accent transition-colors no-underline flex items-center gap-[3px]"
+                >
+                  {t('explore')} <span className="text-[12px]">→</span>
+                </Link>
+              )}
             </div>
           ))}
         </AnimateOnScroll>

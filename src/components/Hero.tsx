@@ -27,23 +27,23 @@ export default function Hero() {
   }, []);
 
   return (
-    <section ref={heroRef} className="relative bg-primary text-white py-[60px] lg:py-[80px] overflow-hidden">
+    <section ref={heroRef} className="relative bg-primary text-white py-[51px] lg:py-[68px] overflow-hidden">
       {/* Brand Identity Background Overlay */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute inset-0 opacity-40" style={{ 
           background: 'radial-gradient(ellipse 60% 80% at 70% 50%, rgba(230,126,34,0.15) 0%, transparent 65%), radial-gradient(ellipse 30% 40% at 20% 80%, rgba(255,255,255,0.05) 0%, transparent 60%)' 
         }}></div>
-        <div className="absolute bottom-0 left-0 w-full h-[200px] bg-gradient-to-t from-black/10 to-transparent"></div>
+        <div className="absolute bottom-0 left-0 w-full h-[170px] bg-gradient-to-t from-black/10 to-transparent"></div>
       </div>
 
       <div className="container-wf relative z-10 flex justify-center w-full">
-        <div ref={contentRef} className="text-center w-full max-w-[1200px] flex flex-col items-center">
+        <div ref={contentRef} className="text-center w-full max-w-[1020px] flex flex-col items-center">
           
-          <h1 className="hero-animate text-[32px] sm:text-[40px] md:text-[52px] lg:text-[64px] font-serif leading-[1.1] mb-4 tracking-tighter">
+          <h1 className="hero-animate text-[27px] sm:text-[34px] md:text-[44px] lg:text-[54px] font-serif leading-[1.1] mb-4 tracking-tighter">
             {t('titlePrefix')} <span className="text-accent">{t('titleHighlight')}</span>
           </h1>
           
-          <p className="hero-animate text-[16px] md:text-[18px] text-white/80 leading-[1.6] max-w-[850px]">
+          <p className="hero-animate text-[14px] md:text-[15px] text-white/80 leading-[1.6] max-w-[723px]">
             {t('description')}
           </p>
           

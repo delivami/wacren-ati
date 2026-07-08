@@ -84,8 +84,8 @@ export default function BlogList() {
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 pb-8 border-b-2 border-primary/15">
           <div>
-            <div className="text-[10px] font-mono font-semibold uppercase tracking-[0.18em] text-primary mb-2">More Updates</div>
-            <h2 className="font-serif text-[30px] md:text-[36px] leading-tight tracking-tighter text-zinc-900 font-normal">
+            <div className="text-[9px] font-mono font-semibold uppercase tracking-[0.18em] text-primary mb-2">More Updates</div>
+            <h2 className="font-serif text-[26px] md:text-[31px] leading-tight tracking-tighter text-zinc-900 font-normal">
               Recent <em className="not-italic text-primary">Articles</em>
             </h2>
           </div>
@@ -96,7 +96,7 @@ export default function BlogList() {
               <button
                 key={f}
                 onClick={() => setActive(f)}
-                className={`px-4 py-1.5 rounded-full text-[11px] font-semibold border transition-all cursor-pointer ${
+                className={`px-4 py-1.5 rounded-full text-[9px] font-semibold border transition-all cursor-pointer ${
                   active === f
                     ? 'bg-primary text-white border-primary shadow-sm'
                     : 'bg-white border-primary/20 text-primary/60 hover:border-primary hover:text-primary'
@@ -110,7 +110,7 @@ export default function BlogList() {
 
         {/* Empty state */}
         {filtered.length === 0 && (
-          <p className="py-16 text-center text-zinc-400 text-[14px]">No articles in this category yet.</p>
+          <p className="py-16 text-center text-zinc-400 text-[12px]">No articles in this category yet.</p>
         )}
 
         {/* Editorial row list */}
@@ -123,27 +123,27 @@ export default function BlogList() {
                 {/* Left — text */}
                 <div className="flex flex-col gap-3 order-2 md:order-1">
                   <div className="flex items-center gap-3 flex-wrap">
-                    <span className={`text-[9px] font-bold uppercase tracking-[0.14em] px-2.5 py-1 rounded border ${categoryColors[post.category] ?? 'bg-primary/5 text-primary border-primary/15'}`}>
+                    <span className={`text-[8px] font-bold uppercase tracking-[0.14em] px-2.5 py-1 rounded border ${categoryColors[post.category] ?? 'bg-primary/5 text-primary border-primary/15'}`}>
                       {post.category}
                     </span>
-                    <span className="text-[11px] font-mono text-zinc-400">{post.date} · {post.readTime} read</span>
+                    <span className="text-[9px] font-mono text-zinc-400">{post.date} · {post.readTime} read</span>
                   </div>
 
-                  <h3 className="font-serif text-[20px] md:text-[24px] leading-[1.25] text-zinc-900 tracking-tight font-normal group-hover:text-primary transition-colors duration-200">
+                  <h3 className="font-serif text-[17px] md:text-[20px] leading-[1.25] text-zinc-900 tracking-tight font-normal group-hover:text-primary transition-colors duration-200">
                     {post.title}
                   </h3>
 
-                  <p className="text-[14px] text-zinc-500 leading-[1.75] max-w-[640px]">
+                  <p className="text-[12px] text-zinc-500 leading-[1.75] max-w-[544px]">
                     {post.excerpt}
                   </p>
                 </div>
 
                 {/* Right — featured image */}
                 <div className="flex items-center md:justify-end order-1 md:order-2">
-                  <div className="relative bg-bg-soft rounded-[12px] overflow-hidden w-full h-[120px] md:h-[140px] group-hover:scale-[1.02] transition-transform duration-300">
+                  <div className="relative bg-bg-soft rounded-[10px] overflow-hidden w-full h-[102px] md:h-[119px] group-hover:scale-[1.02] transition-transform duration-300">
                     <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'linear-gradient(rgba(222,91,39,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(222,91,39,0.4) 1px, transparent 1px)', backgroundSize: '24px 24px' }} />
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-primary/40 font-serif text-[32px] font-bold opacity-30 group-hover:scale-110 transition-transform duration-700">ATI</span>
+                      <span className="text-primary/40 font-serif text-[27px] font-bold opacity-30 group-hover:scale-110 transition-transform duration-700">ATI</span>
                     </div>
                   </div>
                 </div>
