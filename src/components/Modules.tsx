@@ -19,7 +19,7 @@ export default function Modules() {
         <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[17px] tracking-tighter text-text-main font-normal">
           {t('headingMain')} <em className="italic text-primary not-italic font-normal">{t('headingHighlight')}</em>
         </h2>
-        <p className="text-[13px] md:text-base text-gray-500 max-w-[510px] mb-[34px] font-normal leading-relaxed whitespace-pre-wrap">
+        <p className="text-[14px] md:text-[15px] text-gray-500 max-w-[510px] mb-[34px] leading-[1.8] whitespace-pre-wrap text-left">
           {t('desc')}
         </p>
 

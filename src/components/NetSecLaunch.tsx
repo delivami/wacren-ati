@@ -28,7 +28,7 @@ export default function NetSecLaunch() {
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[17px]">
             {t('titlePrefix')} <em className="not-italic text-primary">{t('titleHighlight')}</em>
           </h2>
-          <p className="text-[14px] text-gray-500">{t('subtitle')}</p>
+          <p className="text-[14px] md:text-[15px] text-gray-500">{t('subtitle')}</p>
         </AnimateOnScroll>
 
         <div className="relative">

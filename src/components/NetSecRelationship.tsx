@@ -22,7 +22,7 @@ export default function NetSecRelationship() {
             <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[20px] text-center lg:text-left">
               {t('titlePrefix')} <em className="not-italic text-primary">{t('titleHighlight')}</em>
             </h2>
-            <div className="space-y-[17px] text-[13px] leading-[1.8] text-gray-500">
+            <div className="space-y-[17px] text-[14px] md:text-[15px] leading-[1.8] text-gray-500">
               <p>{t('p1')}</p>
             </div>
           </AnimateOnScroll>

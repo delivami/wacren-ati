@@ -19,7 +19,7 @@ export default function Facilitators() {
             <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[17px] tracking-tighter text-text-main font-normal">
               {t('headingMain')} <em className="italic text-primary not-italic font-normal">{t('headingHighlight')}</em>
             </h2>
-            <p className="text-[13px] leading-[1.8] text-gray-500 mb-[27px]">
+            <p className="text-[14px] md:text-[15px] leading-[1.8] text-gray-500 mb-[27px]">
               {t('desc')}
             </p>
             <ul className="list-none p-0 m-0 flex flex-col gap-[14px]">

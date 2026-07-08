@@ -21,7 +21,7 @@ export default function Community() {
               <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[17px] tracking-tighter text-text-main">
                 {t('headingMain')} <em className="italic text-primary not-italic">{t('headingHighlight')}</em>
               </h2>
-              <p className="text-[13px] leading-[1.8] text-gray-500 mb-[27px]">
+              <p className="text-[14px] md:text-[15px] leading-[1.8] text-gray-500 mb-[27px]">
                 {t('desc')}
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-[10px] list-none p-0 m-0">

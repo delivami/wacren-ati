@@ -21,7 +21,7 @@ export default function Launch() {
               {t('headingMain')} <br /><em className="italic text-primary not-italic font-normal">{t('headingHighlight')}</em>
             </h2>
             
-            <div className="space-y-[14px] text-[13px] leading-[1.8] text-gray-500 mb-[27px] font-normal">
+            <div className="space-y-[14px] text-[14px] md:text-[15px] leading-[1.8] text-gray-500 mb-[27px] font-normal text-left">
               <p dangerouslySetInnerHTML={{ __html: t('p1').replace('<span>', '<span class="font-medium text-text-main">') }} />
               <p>{t('p2')}</p>
               <p dangerouslySetInnerHTML={{ __html: t('p3').replace('<span>', '<span class="font-medium text-text-main">') }} />

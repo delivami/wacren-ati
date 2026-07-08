@@ -16,7 +16,7 @@ export default function ContactUI() {
           <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] mb-[17px] tracking-tighter text-text-main font-normal">
             {t('connectTitle')} <em className="italic text-primary not-italic font-normal">{t('heroTitleHighlight')}</em>
           </h2>
-          <p className="text-[13px] md:text-base text-gray-500 max-w-[510px] font-normal leading-relaxed mx-auto">
+          <p className="text-[14px] md:text-[15px] text-gray-500 max-w-[510px] font-normal leading-[1.8] mx-auto">
             {t('connectDesc')}
           </p>
         </div>
