@@ -44,7 +44,7 @@ export default function TrainingPage() {
       </section>
 
       {/* Training Curriculum Table Section */}
-      <section className="py-[85px] bg-white">
+      <section id="modules" className="py-[85px] bg-white">
         <div className="container-wf">
           <AnimateOnScroll animation="fadeInUp" className="text-center mb-[48px]">
             <h2 className="font-serif text-[27px] md:text-[36px] leading-[1.2] tracking-tighter text-zinc-900 font-normal mb-[14px]">

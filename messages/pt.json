@@ -230,20 +230,25 @@
     "programmesTitle": "PROGRAMAS",
     "wacrenTitle": "WACREN",
     "atiLinks": [
-      { "label": "Sobre a ATI", "href": "/#about" },
-      { "label": "Módulos de Treinamento", "href": "/#modules" },
-      { "label": "Quadro do Programa", "href": "/#framework" },
-      { "label": "Candidatar-se como Facilitador", "href": "https://survey.wacren.net/index.php/291743" }
+      { "label": "Sobre a ATI", "href": "/about" },
+      { "label": "Módulos de Treinamento", "href": "/training" },
+      { "label": "Quadro do Programa", "href": "/documents/ATI-Programme-Framework.pdf" },
+      { "label": "Facilitadores Especialistas", "href": "/facilitators" },
+      { "label": "Fórum NetSec", "href": "/netsec" },
+      { "label": "Blog e Artigos", "href": "/blog" },
+      { "label": "Contate-nos", "href": "/contact" }
     ],
     "programmesLinks": [
-      { "label": "NREN Academy", "href": "#" },
-      { "label": "TrustBroker Africa", "href": "http://trustbroker.africa/" },
-      { "label": "eduID.africa", "href": "http://eduid.africa/" },
+      { "label": "NREN Academy", "href": "https://wacren.net" },
+      { "label": "TrustBroker Africa", "href": "https://trustbroker.africa/" },
+      { "label": "eduID.africa", "href": "https://eduid.africa/" },
       { "label": "LIBSENSE", "href": "https://libsense.ren.africa/home" },
       { "label": "Africa Digital Campus", "href": "https://digitalcampus.africa/" }
     ],
     "wacrenLinks": [
-      { "label": "Sobre a WACREN", "href": "https://www.wacren.net/about" }
+      { "label": "Sobre a WACREN", "href": "https://www.wacren.net/about" },
+      { "label": "Portal Principal WACREN", "href": "https://www.wacren.net" },
+      { "label": "Candidatar-se como Facilitador", "href": "https://survey.wacren.net/index.php/291743" }
     ],
     "copyright": "Copyright \u00a9 {year} WACREN. Todos os direitos reservados.",
     "funded": "O Programa da Iniciativa de Treinamento em África (ATI) é apoiado pelo Projeto AfricaConnect, cofinanciado pela União Europeia através do Programa Global Gateway."

@@ -230,20 +230,25 @@
     "programmesTitle": "PROGRAMMES",
     "wacrenTitle": "WACREN",
     "atiLinks": [
-      { "label": "À propos de l'ATI", "href": "/#about" },
-      { "label": "Modules de formation", "href": "/#modules" },
-      { "label": "Cadre du programme", "href": "/#framework" },
-      { "label": "Devenir facilitateur", "href": "https://survey.wacren.net/index.php/291743" }
+      { "label": "À propos de l'ATI", "href": "/about" },
+      { "label": "Modules de formation", "href": "/training" },
+      { "label": "Cadre du programme", "href": "/documents/ATI-Programme-Framework.pdf" },
+      { "label": "Facilitateurs", "href": "/facilitators" },
+      { "label": "Forum NetSec", "href": "/netsec" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Contactez-nous", "href": "/contact" }
     ],
     "programmesLinks": [
-      { "label": "NREN Academy", "href": "#" },
-      { "label": "TrustBroker Africa", "href": "http://trustbroker.africa/" },
-      { "label": "eduID.africa", "href": "http://eduid.africa/" },
+      { "label": "NREN Academy", "href": "https://wacren.net" },
+      { "label": "TrustBroker Africa", "href": "https://trustbroker.africa/" },
+      { "label": "eduID.africa", "href": "https://eduid.africa/" },
       { "label": "LIBSENSE", "href": "https://libsense.ren.africa/home" },
       { "label": "Africa Digital Campus", "href": "https://digitalcampus.africa/" }
     ],
     "wacrenLinks": [
-      { "label": "À propos du WACREN", "href": "https://www.wacren.net/about" }
+      { "label": "À propos du WACREN", "href": "https://www.wacren.net/about" },
+      { "label": "Portail WACREN", "href": "https://www.wacren.net" },
+      { "label": "Devenir facilitateur", "href": "https://survey.wacren.net/index.php/291743" }
     ],
     "copyright": "Copyright \u00a9 {year} WACREN. Tous droits réservés.",
     "funded": "Le programme de l'Initiative de Formation en Afrique (ATI) est soutenu par le projet AfricaConnect, cofinancé par l'Union européenne dans le cadre du programme Global Gateway."

@@ -230,20 +230,26 @@
     "programmesTitle": "PROGRAMMES",
     "wacrenTitle": "WACREN",
     "atiLinks": [
-      { "label": "About ATI", "href": "/#about" },
-      { "label": "Training Modules", "href": "/#modules" },
-      { "label": "Programme Framework", "href": "/#framework" },
-      { "label": "Apply to Facilitate", "href": "https://survey.wacren.net/index.php/291743" }
+      { "label": "About ATI", "href": "/about" },
+      { "label": "Training Modules", "href": "/training" },
+      { "label": "Programme Framework", "href": "/documents/ATI-Programme-Framework.pdf" },
+      { "label": "Expert Facilitators", "href": "/facilitators" },
+      { "label": "NetSec Forum", "href": "/netsec" },
+      { "label": "Blog & Insights", "href": "/blog" },
+      { "label": "Contact Us", "href": "/contact" }
     ],
     "programmesLinks": [
-      { "label": "NREN Academy", "href": "#" },
-      { "label": "TrustBroker Africa", "href": "http://trustbroker.africa/" },
-      { "label": "eduID.africa", "href": "http://eduid.africa/" },
+      { "label": "NREN Academy", "href": "https://wacren.net" },
+      { "label": "TrustBroker Africa", "href": "https://trustbroker.africa/" },
+      { "label": "eduID.africa", "href": "https://eduid.africa/" },
       { "label": "LIBSENSE", "href": "https://libsense.ren.africa/home" },
       { "label": "Africa Digital Campus", "href": "https://digitalcampus.africa/" }
     ],
     "wacrenLinks": [
-      { "label": "About WACREN", "href": "https://www.wacren.net/about" }
+      { "label": "About WACREN", "href": "https://www.wacren.net/about" },
+      { "label": "WACREN Main Portal", "href": "https://www.wacren.net" },
+      { "label": "Programme Framework (PDF)", "href": "/documents/ATI-Programme-Framework.pdf" },
+      { "label": "Apply to Facilitate", "href": "https://survey.wacren.net/index.php/291743" }
     ],
     "copyright": "Copyright \u00a9 {year} WACREN. All rights reserved.",
     "funded": "The Africa Training Initiative (ATI) Program is supported by the AfricaConnect Project, co-funded by the European Union through the Global Gateway Program."

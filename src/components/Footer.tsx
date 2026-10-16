@@ -1,7 +1,5 @@
-'use client';
-
 import React from 'react';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import { useTranslations } from 'next-intl';
 import { FaLinkedin, FaXTwitter, FaMastodon } from 'react-icons/fa6';
 import { SiBluesky } from 'react-icons/si';
@@ -21,12 +19,39 @@ export default function Footer() {
     { icon: <FaXTwitter size={18} />, href: 'https://twitter.com/wacren' },
   ];
 
+  const renderFooterLink = (link: { label: string; href: string }) => {
+    const isExternal = link.href.startsWith('http');
+    const isStaticDoc = link.href.startsWith('/documents/') || link.href.endsWith('.pdf');
+
+    if (isExternal || isStaticDoc) {
+      return (
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[12px] text-white/70 hover:text-white transition-colors inline-block py-0.5"
+        >
+          {link.label}
+        </a>
+      );
+    }
+
+    return (
+      <Link
+        href={link.href as any}
+        className="text-[12px] text-white/70 hover:text-white transition-colors inline-block py-0.5"
+      >
+        {link.label}
+      </Link>
+    );
+  };
+
   return (
     <footer className="bg-primary text-white pt-[41px] pb-[20px] border-t border-white/10">
       <div className="container-wf">
         <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr_1.5fr] gap-[27px] lg:gap-[34px] mb-[31px]">
           <div>
-            <div className="flex items-center mb-[14px]">
+            <Link href="/" className="inline-block mb-[14px] opacity-90 hover:opacity-100 transition-opacity">
               <Image 
                 src="/images/wacren-ati-logo.png" 
                 alt="WACREN ATI" 
@@ -34,13 +59,13 @@ export default function Footer() {
                 height={44}
                 className="h-[37px] w-auto brightness-0 invert"
               />
-            </div>
+            </Link>
             <p className="text-[11px] leading-[1.7] text-white/50 max-w-[289px] mb-[14px]">
               {t('tagline')}
             </p>
             <div className="flex gap-[10px]">
               {socials.map((s, i) => (
-                <Link 
+                <a 
                   key={i} 
                   href={s.href} 
                   target="_blank"
@@ -48,7 +73,7 @@ export default function Footer() {
                   className="w-[34px] h-[34px] bg-white/5 border border-white/10 rounded-[7px] flex items-center justify-center text-white/40 hover:text-white hover:border-white/30 hover:bg-white/10 transition-all no-underline"
                 >
                   {s.icon}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -58,14 +83,7 @@ export default function Footer() {
             <ul className="space-y-[7px] m-0 p-0 list-none">
               {atiLinks.map((link, i) => (
                 <li key={i}>
-                  <Link 
-                    href={link.href} 
-                    target={link.href.startsWith('http') ? "_blank" : undefined}
-                    rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
-                    className="text-[12px] text-white/70 hover:text-white transition-colors no-underline"
-                  >
-                    {link.label}
-                  </Link>
+                  {renderFooterLink(link)}
                 </li>
               ))}
             </ul>
@@ -76,14 +94,7 @@ export default function Footer() {
             <ul className="space-y-[7px] m-0 p-0 list-none">
               {programmesLinks.map((link, i) => (
                 <li key={i}>
-                  <Link 
-                    href={link.href} 
-                    target={link.href.startsWith('http') ? "_blank" : undefined}
-                    rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
-                    className="text-[12px] text-white/70 hover:text-white transition-colors no-underline"
-                  >
-                    {link.label}
-                  </Link>
+                  {renderFooterLink(link)}
                 </li>
               ))}
             </ul>
@@ -94,14 +105,7 @@ export default function Footer() {
             <ul className="space-y-[7px] m-0 p-0 list-none">
               {wacrenLinks.map((link, i) => (
                 <li key={i}>
-                  <Link 
-                    href={link.href} 
-                    target={link.href.startsWith('http') ? "_blank" : undefined}
-                    rel={link.href.startsWith('http') ? "noopener noreferrer" : undefined}
-                    className="text-[12px] text-white/70 hover:text-white transition-colors no-underline"
-                  >
-                    {link.label}
-                  </Link>
+                  {renderFooterLink(link)}
                 </li>
               ))}
             </ul>
